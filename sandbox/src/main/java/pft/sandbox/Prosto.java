@@ -4,14 +4,9 @@ public class Prosto{
 
    public static void main(String[] args){
 
-       Point p1 = new Point();
-       p1.x = 4;
-       p1.y = 6;
+       Point p1 = new Point(2, 5);
 
-       Point p2 = new Point();
-       p2.x = 3;
-       p2.y = 1;
-
+       Point p2 = new Point(4, 6);
 
        System.out.println("Длина отрезка равна " + distance(p1, p2));
    }
