@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f95b0898-68ab-4643-bce7-852fe6599f6f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/sandbox">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sandbox" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VOdwvR8ShNYPVs85VDLarbZVlo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunManager" selected="Application.Prosto">
+    <configuration name="Prosto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pft.sandbox.Prosto" />
+      <module name="sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pft.sandbox.PointTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PointTest" />
+        <item itemvalue="Application.Prosto" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f95b0898-68ab-4643-bce7-852fe6599f6f" name="Default Changelist" comment="" />
+      <created>1577128316943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577128316943</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="329" y="95" key="#Project_Structure" timestamp="1577128779793">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="329" y="95" key="#Project_Structure/0.0.1474.864@0.0.1474.864" timestamp="1577128779793" />
+    <state x="517" y="146" key="FileChooserDialogImpl" timestamp="1577128690800">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="517" y="146" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1577128690800" />
+    <state width="1342" height="208" key="GridCell.Tab.0.bottom" timestamp="1577129230468">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1577129230468" />
+    <state width="1342" height="208" key="GridCell.Tab.0.center" timestamp="1577129230467">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
+    <state width="1342" height="208" key="GridCell.Tab.0.left" timestamp="1577129230467">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
+    <state width="1342" height="208" key="GridCell.Tab.0.right" timestamp="1577129230467">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
+    <state x="247" y="16" key="SettingsEditor" timestamp="1577129323761">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="247" y="16" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1577129323761" />
+    <state x="445" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1577128785998">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="445" y="261" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1577128785998" />
+  </component>
+</project>
