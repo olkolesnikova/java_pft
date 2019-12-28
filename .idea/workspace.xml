@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95b0898-68ab-4643-bce7-852fe6599f6f" name="Default Changelist" comment="" />
+    <list default="true" id="f95b0898-68ab-4643-bce7-852fe6599f6f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/adressbook-web-tests/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adressbook-web-tests/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adressbook-web-tests/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/reports/tests/test/classes/pft.sandbox.PointTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/reports/tests/test/classes/pft.sandbox.PointTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/reports/tests/test/packages/pft.sandbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/reports/tests/test/packages/pft.sandbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/test-results/test/TEST-pft.sandbox.PointTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/test-results/test/TEST-pft.sandbox.PointTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/test-results/test/binary/results.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/adressbook-web-tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
@@ -40,13 +58,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adressbook-web-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Application.Prosto">
+  <component name="RunManager" selected="Gradle.PointTest">
     <configuration name="Prosto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pft.sandbox.Prosto" />
       <module name="sandbox.main" />
@@ -117,33 +135,49 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="329" y="95" key="#Project_Structure/0.0.1474.864@0.0.1474.864" timestamp="1577128779793" />
-    <state x="517" y="146" key="FileChooserDialogImpl" timestamp="1577128690800">
+    <state x="517" y="146" key="FileChooserDialogImpl" timestamp="1577518416664">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="517" y="146" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1577128690800" />
-    <state width="1342" height="208" key="GridCell.Tab.0.bottom" timestamp="1577129230468">
+    <state x="517" y="146" key="FileChooserDialogImpl/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577518416664" />
+    <state x="517" y="146" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1577517600397" />
+    <state width="1342" height="208" key="GridCell.Tab.0.bottom" timestamp="1577462995894">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.bottom/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577462995894" />
     <state width="1342" height="208" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1577129230468" />
-    <state width="1342" height="208" key="GridCell.Tab.0.center" timestamp="1577129230467">
+    <state width="1342" height="208" key="GridCell.Tab.0.center" timestamp="1577462995894">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.center/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577462995894" />
     <state width="1342" height="208" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
-    <state width="1342" height="208" key="GridCell.Tab.0.left" timestamp="1577129230467">
+    <state width="1342" height="208" key="GridCell.Tab.0.left" timestamp="1577462995893">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.left/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577462995893" />
     <state width="1342" height="208" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
-    <state width="1342" height="208" key="GridCell.Tab.0.right" timestamp="1577129230467">
+    <state width="1342" height="208" key="GridCell.Tab.0.right" timestamp="1577462995894">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state width="1342" height="208" key="GridCell.Tab.0.right/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577462995894" />
     <state width="1342" height="208" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1577129230467" />
-    <state x="247" y="16" key="SettingsEditor" timestamp="1577129323761">
+    <state x="247" y="16" key="SettingsEditor" timestamp="1577519194827">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="247" y="16" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1577129323761" />
-    <state x="445" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1577128785998">
+    <state x="247" y="16" key="SettingsEditor/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577519194827" />
+    <state x="247" y="16" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1577517506115" />
+    <state x="445" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1577517896999">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state x="445" y="261" key="com.intellij.ide.util.TipDialog/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577517896999" />
     <state x="445" y="261" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1577128785998" />
+    <state x="376" y="29" width="609" height="804" key="find.popup" timestamp="1577517606628">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="376" y="29" width="609" height="804" key="find.popup/0.0.1474.864@0.0.1474.864" timestamp="1577517606628" />
+    <state x="207" y="62" key="new project wizard" timestamp="1577519370979">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="207" y="62" key="new project wizard/0.0.1474.864/1920.0.1280.680@0.0.1474.864" timestamp="1577519370979" />
+    <state x="207" y="62" key="new project wizard/0.0.1474.864@0.0.1474.864" timestamp="1577517493371" />
   </component>
 </project>
