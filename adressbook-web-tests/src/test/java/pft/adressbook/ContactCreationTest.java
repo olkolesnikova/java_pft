@@ -29,7 +29,7 @@ public class ContactCreationTest {
   @Test
   public void testContactCreation() throws Exception {
     gotoNewContactPage("add new");
-    fillContactForm(new ContactData("Oleg", "Sokolov", "Russia, Moscow, str. Lenina, 125", "495458612", "sokolov85@mail.ru"));
+    fillContactForm(new ContactData("Олег", "Соколов", "Россия, Москва, ул. Ленина, 125", "495458612", "sokolov85@mail.ru"));
     submitContactCreation("(//input[@name='submit'])[2]");
     returnToHomePage("home page");
 
