@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-29T11:38:47" hostname="Earp" time="2.702">
+<testsuite name="pft.adressbook.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-29T12:07:30" hostname="Earp" time="1.863">
   <properties/>
-  <testcase name="testContactCreation" classname="pft.adressbook.ContactCreationTest" time="2.702"/>
+  <testcase name="testContactCreation" classname="pft.adressbook.ContactCreationTest" time="1.863"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
