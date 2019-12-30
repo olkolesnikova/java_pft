@@ -79,4 +79,12 @@ public class TestBase {
         return false;
       }
     }
+
+    protected void deleteSelectedGroups(String delete) {
+      wd.findElement(By.name(delete)).click();
+    }
+
+    protected void selectGroup(String s) {
+      wd.findElement(By.name(s)).click();
+    }
 }
