@@ -5,6 +5,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pft.adressbook.ContactData;
 import pft.adressbook.model.GroupData;
 
 import java.util.concurrent.TimeUnit;
@@ -83,5 +84,37 @@ public class ApplicationManager {
 
     public void selectGroup(String s) {
       wd.findElement(By.name(s)).click();
+    }
+
+    public void returnToHomePage(String s) {
+        wd.findElement(By.linkText(s)).click();
+    }
+
+
+        public void gotoNewContactPage(String s) {
+        wd.findElement(By.linkText(s)).click();
+    }
+
+    public void submitContactCreation() {
+        wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
+    }
+
+    public void fillContactForm(ContactData contactData) {
+
+        wd.findElement(By.name("firstname")).click();
+        wd.findElement(By.name("firstname")).clear();
+        wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
+        wd.findElement(By.name("lastname")).click();
+        wd.findElement(By.name("lastname")).clear();
+        wd.findElement(By.name("lastname")).sendKeys(contactData.getFamily());
+        wd.findElement(By.name("address")).click();
+        wd.findElement(By.name("address")).clear();
+        wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
+        wd.findElement(By.name("home")).click();
+        wd.findElement(By.name("home")).clear();
+        wd.findElement(By.name("home")).sendKeys(contactData.getTelephone());
+        wd.findElement(By.name("email")).click();
+        wd.findElement(By.name("email")).clear();
+        wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
     }
 }
