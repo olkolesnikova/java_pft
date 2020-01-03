@@ -14,33 +14,41 @@ public class ContactHelper {
     }
 
     public void returnToHomePage(String s) {
-        wd.findElement(By.linkText(s)).click();
+        click(By.linkText(s));
     }
 
     public void gotoNewContactPage(String s) {
-    wd.findElement(By.linkText(s)).click();
-}
+        click(By.linkText(s));
+    }
 
     public void submitContactCreation() {
-    wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
+    click(By.xpath("(//input[@name='submit'])[2]"));
 }
+
+    private void click(By locator) {
+        wd.findElement(locator).click();
+    }
 
     public void fillContactForm(ContactData contactData) {
 
-    wd.findElement(By.name("firstname")).click();
-    wd.findElement(By.name("firstname")).clear();
-    wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
-    wd.findElement(By.name("lastname")).click();
-    wd.findElement(By.name("lastname")).clear();
-    wd.findElement(By.name("lastname")).sendKeys(contactData.getFamily());
-    wd.findElement(By.name("address")).click();
-    wd.findElement(By.name("address")).clear();
-    wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
-    wd.findElement(By.name("home")).click();
-    wd.findElement(By.name("home")).clear();
-    wd.findElement(By.name("home")).sendKeys(contactData.getTelephone());
-    wd.findElement(By.name("email")).click();
-    wd.findElement(By.name("email")).clear();
-    wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
-}
+        field(By.name("firstname"), contactData.getName());
+        field(By.name("lastname"), contactData.getFamily());
+        field(By.name("address"), contactData.getAddress());
+        field(By.name("home"), contactData.getTelephone());
+        field(By.name("email"), contactData.getEmail());
+    }
+
+    private void field(By locator, String text) {
+        wd.findElement(locator).click();
+        wd.findElement(locator).clear();
+        wd.findElement(locator).sendKeys(text);
+    }
+
+    public void selectContact() {
+
+        click(By.id("20"));
+    }
+
+
+
 }
