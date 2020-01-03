@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
 
-
     protected WebDriver wd;
 
     public HelperBase(WebDriver wd) {
@@ -42,4 +41,9 @@ public class HelperBase {
         }
     }
 
+    protected void field(By locator, String text) {
+        wd.findElement(locator).click();
+        wd.findElement(locator).clear();
+        wd.findElement(locator).sendKeys(text);
+    }
 }

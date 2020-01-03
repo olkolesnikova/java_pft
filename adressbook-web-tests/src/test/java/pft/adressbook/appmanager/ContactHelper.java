@@ -4,12 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pft.adressbook.ContactData;
 
-public class ContactHelper {
-
-    private WebDriver wd;
+public class ContactHelper extends HelperBase {
 
     public ContactHelper(WebDriver wd) {
-        this.wd = wd;
+        super(wd);
 
     }
 
@@ -25,7 +23,7 @@ public class ContactHelper {
     click(By.xpath("(//input[@name='submit'])[2]"));
 }
 
-    private void click(By locator) {
+    protected void click(By locator) {
         wd.findElement(locator).click();
     }
 
@@ -38,17 +36,18 @@ public class ContactHelper {
         field(By.name("email"), contactData.getEmail());
     }
 
-    private void field(By locator, String text) {
-        wd.findElement(locator).click();
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-    }
-
     public void selectContact() {
 
         click(By.id("20"));
     }
 
 
+    public void deleteSelectedContact() {
+        click(By.xpath("//input[@value='Delete']"));
+    }
 
+    public void closeAlert() {
+        wd.switchTo().alert().accept();
+
+    }
 }
