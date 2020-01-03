@@ -38,7 +38,7 @@ public class ContactHelper extends HelperBase {
 
     public void selectContact() {
 
-        click(By.id("20"));
+        click(By.id("13"));
     }
 
 
@@ -48,6 +48,16 @@ public class ContactHelper extends HelperBase {
 
     public void closeAlert() {
         wd.switchTo().alert().accept();
+
+    }
+
+    public void gotoEdit() {
+        click(By.xpath("//img[@alt='Edit']"));
+
+    }
+
+    public void getUpdate() {
+        click(By.xpath("(//input[@name='update'])[2]"));
 
     }
 }
