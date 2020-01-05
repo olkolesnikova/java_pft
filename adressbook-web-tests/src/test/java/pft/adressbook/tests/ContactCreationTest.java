@@ -1,7 +1,7 @@
 package pft.adressbook.tests;
 
 import org.testng.annotations.Test;
-import pft.adressbook.ContactData;
+import pft.adressbook.model.ContactData;
 
 
 public class ContactCreationTest extends TestBase {

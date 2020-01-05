@@ -2,7 +2,7 @@ package pft.adressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pft.adressbook.ContactData;
+import pft.adressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
