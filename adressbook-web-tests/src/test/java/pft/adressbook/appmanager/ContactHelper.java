@@ -11,12 +11,12 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void returnToHomePage(String s) {
-        click(By.linkText(s));
+    public void returnToHomePage() {
+        click(By.linkText("home page"));
     }
 
-    public void gotoNewContactPage(String s) {
-        click(By.linkText(s));
+    public void gotoNewContactPage() {
+        click(By.linkText("add new"));
     }
 
     public void submitContactCreation() {

@@ -10,12 +10,14 @@ public class GroupHelper extends HelperBase {
         super(wd);
     }
 
-    public void returnToGroupPage(String s) {
-        click(By.linkText(s));
+    public void returnToGroupPage() {
+
+        click(By.linkText("group page"));
     }
 
-    public void submitGroupCreation(String submit) {
-        click(By.name(submit));
+    public void submitGroupCreation() {
+
+        click(By.name("submit"));
     }
 
     public void fillGroupForm(GroupData groupData) {
@@ -24,19 +26,21 @@ public class GroupHelper extends HelperBase {
         type(By.name("group_footer"), groupData.getFooter());
     }
 
-    public void initGroupCreation(String s) {
-        click(By.name(s));
+    public void initGroupCreation() {
+
+        click(By.name("new"));
     }
 
     public void deleteSelectedGroups(String delete) {
         click(By.name(delete));
     }
 
-    public void selectGroup(String s) {
-        click(By.name(s));
+    public void selectGroup() {
+
+        click(By.name("selected[]"));
     }
 
-    public void initGroupModifacation() {
+    public void initGroupModification() {
         click(By.name("edit"));
 
     }
