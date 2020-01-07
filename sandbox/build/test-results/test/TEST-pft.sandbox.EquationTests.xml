@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pft.sandbox.EquationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-07T10:05:31" hostname="Earp" time="0.008">
+  <properties/>
+  <testcase name="test0" classname="pft.sandbox.EquationTests" time="0.007"/>
+  <testcase name="test1" classname="pft.sandbox.EquationTests" time="0.0"/>
+  <testcase name="test2" classname="pft.sandbox.EquationTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
