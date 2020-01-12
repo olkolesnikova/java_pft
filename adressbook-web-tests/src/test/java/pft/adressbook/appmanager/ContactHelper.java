@@ -2,6 +2,8 @@ package pft.adressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import pft.adressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
@@ -27,14 +29,27 @@ public class ContactHelper extends HelperBase {
         wd.findElement(locator).click();
     }
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
 
         field(By.name("firstname"), contactData.getName());
         field(By.name("lastname"), contactData.getFamily());
         field(By.name("address"), contactData.getAddress());
         field(By.name("home"), contactData.getTelephone());
         field(By.name("email"), contactData.getEmail());
+
+        if (creation) {
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
+
+
+
+
+
     }
+
+
 
     public void selectContact() {
 
