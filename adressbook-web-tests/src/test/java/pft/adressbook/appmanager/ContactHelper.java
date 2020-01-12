@@ -41,10 +41,6 @@ public class ContactHelper extends HelperBase {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
 
-
-
-
-
     }
 
 
@@ -72,5 +68,25 @@ public class ContactHelper extends HelperBase {
     public void getUpdate() {
         click(By.xpath("(//input[@name='update'])[2]"));
 
+    }
+
+    public void createContact(ContactData contact, boolean creation) {
+        gotoNewContactPage();
+        fillContactForm(contact, true);
+        submitContactCreation();
+        returnToHomePage();
+
+
+    }
+
+    public void returnToHomePage() {
+        if (isElementPresent(By.id ("maintable"))) {
+            return;
+        }
+        click(By.linkText("home page"));
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
