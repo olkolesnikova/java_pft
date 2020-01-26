@@ -11,7 +11,7 @@ public class Collections {
       String[] langs = {"Java", "C#", "Python", "PHP"};
 
         List<String> languages = Arrays.asList("Java", "C#", "Python", "PHP");
-        
+
 
       int i = 0;
       for (String l : languages) {
