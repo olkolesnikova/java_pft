@@ -57,6 +57,7 @@ public class ContactHelper extends HelperBase {
 
     public void closeAlert() {
         wd.switchTo().alert().accept();
+        wd.findElement(By.cssSelector("div.msgbox"));
 
     }
 
