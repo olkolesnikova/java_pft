@@ -1,28 +1,25 @@
 package pft.adressbook.model;
 
 public class ContactData {
-        private final String id;
+        private int id;
         private final String name;
         private final String family;
         private final String address;
         private final String telephone;
-        private final String email;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private final String email;
         private String group;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
     public ContactData(String name, String family, String address, String telephone, String email, String group) {
-        this.id = null;
+        this.id = 0;
         this.name = name;
         this.family = family;
         this.address = address;
@@ -33,7 +30,7 @@ public class ContactData {
 
     }
 
-    public ContactData(String id, String name, String family, String address, String telephone, String email, String group) {
+        public ContactData(int id, String name, String family, String address, String telephone, String email, String group) {
         this.id = id;
         this.name = name;
         this.family = family;
@@ -53,21 +50,6 @@ public class ContactData {
             return family;
         }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ContactData that = (ContactData) o;
-
-        return id != null ? id.equals(that.id) : that.id == null;
-    }
-
-    @Override
-    public int hashCode() {
-        return id != null ? id.hashCode() : 0;
-    }
-
     public String getAddress() {
             return address;
         }
@@ -84,7 +66,28 @@ public class ContactData {
         return group;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        ContactData that = (ContactData) o;
+
+        return id == that.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
 }
 
