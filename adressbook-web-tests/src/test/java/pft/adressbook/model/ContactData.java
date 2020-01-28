@@ -19,7 +19,7 @@ public class ContactData {
     }
 
     public ContactData(String name, String family, String address, String telephone, String email, String group) {
-        this.id = 0;
+        this.id = Integer.MAX_VALUE;
         this.name = name;
         this.family = family;
         this.address = address;
