@@ -3,7 +3,26 @@ package pft.adressbook.model;
 public class ContactData {
         private int id;
         private final String name;
-        private final String family;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ContactData that = (ContactData) o;
+
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        return family != null ? family.equals(that.family) : that.family == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (family != null ? family.hashCode() : 0);
+        return result;
+    }
+
+    private final String family;
         private final String address;
         private final String telephone;
 
@@ -18,7 +37,7 @@ public class ContactData {
         return id;
     }
 
-    public ContactData(String name, String family, String address, String telephone, String email, String group) {
+    public ContactData(String family, String name, String address, String telephone, String email, String group) {
         this.id = Integer.MAX_VALUE;
         this.name = name;
         this.family = family;
@@ -30,7 +49,7 @@ public class ContactData {
 
     }
 
-        public ContactData(int id, String name, String family, String address, String telephone, String email, String group) {
+        public ContactData(int id, String family, String name, String address, String telephone, String email, String group) {
         this.id = id;
         this.name = name;
         this.family = family;
@@ -67,25 +86,10 @@ public class ContactData {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ContactData that = (ContactData) o;
-
-        return id == that.id;
-    }
-
-    @Override
-    public int hashCode() {
-        return id;
-    }
-
-    @Override
     public String toString() {
         return "ContactData{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
+                ", family='" + family + '\'' +
                 '}';
     }
 
