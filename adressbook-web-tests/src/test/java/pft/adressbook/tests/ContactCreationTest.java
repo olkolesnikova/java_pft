@@ -12,11 +12,12 @@ import java.util.List;
 public class ContactCreationTest extends TestBase {
 
 
-    @Test (enabled = false)
+    @Test
   public void testContactCreation() throws Exception {
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().gotoNewContactPage();
-        ContactData contact = new ContactData("Соколов", "Олег","Екатеринбург", "4951251", "sokolov85@mail.ru", "test1");
+        ContactData contact = new ContactData()
+                .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1");
         app.getContactHelper().fillContactForm(contact, true);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();

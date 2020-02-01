@@ -111,9 +111,8 @@ public class ContactHelper extends HelperBase {
             String telephone = cells.get(4).getText();
             String email = cells.get(5).getText();
             String group = cells.get(6).getText();
-
-            ContactData contact = new ContactData(family, name, address, telephone, email, group);
-            contacts.add(contact);
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            contacts.add(new ContactData().withId(id).withFamily(family).withName(name).withAddress(address).withTelephone(telephone).withEmail(email).withGroup(group));
         }
         return contacts;
     }
