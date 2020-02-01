@@ -117,4 +117,18 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
+
+    public void modifyContact(ContactData contact, int index) {
+        selectContact(index);
+        gotoEdit(index);
+        fillContactForm(contact, false);
+        getUpdate();
+        returnToHomePage();
+    }
+
+    public void deleteContact(int index) {
+        selectContact(index);
+        deleteSelectedContact();
+        closeAlert();
+    }
 }
