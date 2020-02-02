@@ -9,13 +9,14 @@ import java.net.BindException;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactModificationTests extends TestBase {
 
     @BeforeMethod
 
     public void ensurePreconditions() {
-        if (app.getContactHelper().getContactList().size() == 0) {
+        if (app.getContactHelper().all().size() == 0) {
             app.getContactHelper().createContact(new ContactData()
                     .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1"), true);
         }
@@ -24,19 +25,17 @@ public class ContactModificationTests extends TestBase {
     @Test
 
     public void testContactModification () {
-        List<ContactData> before = app.getContactHelper().getContactList();
-        int index = before.size() - 1;
+        Set<ContactData> before = app.getContactHelper().all();
+        ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData()
-                .withId(before.get(index).getId()).withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1");
-        app.getContactHelper().modifyContact(contact, index);
-        List<ContactData> after = app.getContactHelper().getContactList();
+                .withId(modifiedContact.getId()).withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1");
+        app.getContactHelper().modifyContact(contact);
+        Set<ContactData> after = app.getContactHelper().all();
 
         Assert.assertEquals(after.size(), before.size());
-        before.remove(before.size() - 1);
+        before.remove(modifiedContact);
         before.add(contact);
-        Comparator<? super ContactData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
-        before.sort(byId);
-        after.sort(byId);
+
         Assert.assertEquals(before, after);
     }
 
