@@ -5,10 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pft.adressbook.model.ContactData;
 
-import java.net.BindException;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class ContactModificationTests extends TestBase {
