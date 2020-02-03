@@ -20,9 +20,8 @@ public class ContactCreationTest extends TestBase {
         app.getContactHelper().fillContactForm(contact, true);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();
+        assertThat(app.getContactHelper().getContactCount(), equalTo(before.size() + 1));
         Contacts after = app.getContactHelper().all();
-        assertThat(after.size(), equalTo(before.size() + 1));
-
         assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
   }
 
