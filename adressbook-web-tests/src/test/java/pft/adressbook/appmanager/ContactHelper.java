@@ -146,12 +146,12 @@ public class ContactHelper extends HelperBase {
             String name = cells.get(2).getText();
             String address = cells.get(3).getText();
 
-            String[] phones = cells.get(5).getText().split("\n");
+            String allPhones = cells.get(5).getText();
             String email = cells.get(4).getText();
             String group = cells.get(6).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             contactCache.add(new ContactData().withId(id).withFamily(family).withName(name).withAddress(address)
-                    .withTelephone(phones[0]).withMobile(phones[1]).withWork(phones[2]).withEmail(email).withGroup(group));
+                    .withAllPhones(allPhones).withEmail(email).withGroup(group));
         }
         return new Contacts(contactCache);
     }
