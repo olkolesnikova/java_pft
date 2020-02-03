@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.ContactEmailTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-03T12:52:42" hostname="Earp" time="0.841">
-  <properties/>
-  <testcase name="testContactEmail" classname="pft.adressbook.tests.ContactEmailTests" time="0.841"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
