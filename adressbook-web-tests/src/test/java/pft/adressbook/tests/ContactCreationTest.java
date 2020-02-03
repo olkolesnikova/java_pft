@@ -16,7 +16,8 @@ public class ContactCreationTest extends TestBase {
         Contacts before = app.getContactHelper().all();
         app.getContactHelper().gotoNewContactPage();
         ContactData contact = new ContactData()
-                .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1");
+                .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251")
+                .withMobile("222").withWork("333").withEmail("sokolov85@mail.ru").withGroup("test1");
         app.getContactHelper().fillContactForm(contact, true);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();

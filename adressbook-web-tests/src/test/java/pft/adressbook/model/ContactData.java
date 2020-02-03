@@ -6,6 +6,8 @@ public class ContactData {
         private String family;
         private String address;
         private String telephone;
+        private String mobile;
+        private String work;
         private String email;
         private String group;
 
@@ -44,6 +46,17 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withMobile(String mobile) {
+
+        this.mobile = mobile;
+        return this;
+    }
+
+    public ContactData withWork(String work){
+        this.work = work;
+        return this;
+    }
+
     public int getId() {
         return id;
     }
@@ -70,6 +83,14 @@ public class ContactData {
 
     public String getGroup() {
         return group;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public String getWork() {
+        return work;
     }
 
     @Override
@@ -99,6 +120,8 @@ public class ContactData {
                 ", family='" + family + '\'' +
                 '}';
     }
+
+
 
 }
 
