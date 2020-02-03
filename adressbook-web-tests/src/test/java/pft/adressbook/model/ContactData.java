@@ -10,7 +10,37 @@ public class ContactData {
         private String work;
         private String email;
         private String group;
-    private String allPhones;
+        private String allPhones;
+        private String email2;
+        private String email3;
+        private String allEmail;
+
+    public String getEmail2() {
+        return email2;
+    }
+
+    public ContactData withEmail2(String email2) {
+        this.email2 = email2;
+        return this;
+    }
+
+    public ContactData withAllEmail(String allEmail) {
+        this.allEmail = allEmail;
+        return this;
+    }
+
+    public String getAllEmail() {
+        return allEmail;
+    }
+
+    public String getEmail3() {
+        return email3;
+    }
+
+    public ContactData withEmail3(String email3) {
+        this.email3 = email3;
+        return this;
+    }
 
     public String getAllPhones() {
         return allPhones;
