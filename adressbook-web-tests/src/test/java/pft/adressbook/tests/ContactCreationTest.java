@@ -22,8 +22,7 @@ public class ContactCreationTest extends TestBase {
     public Iterator<Object[]> validContacts() {
         List<Object[]> list = new ArrayList<Object[]>();
         list.add(new Object[]{new ContactData().withName("Петр").withFamily("Петров").withAddress("Москва").withGroup("test1")});
-        list.add(new Object[]{new ContactData().withName("Иван").withFamily("Иванов").withAddress("Екатеринбург").withGroup("test1")});
-        list.add(new Object[]{new ContactData().withName("Семен").withFamily("Семенов").withAddress("Новосибирск").withGroup("test1")});
+
         return list.iterator();
     }
 
