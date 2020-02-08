@@ -1,5 +1,7 @@
 package pft.adressbook.model;
 
+import java.io.File;
+
 public class ContactData {
         private int id = Integer.MAX_VALUE;
         private String name;
@@ -9,11 +11,22 @@ public class ContactData {
         private String mobile;
         private String work;
         private String email;
-        private String group;
+
+    public File getPhoto() {
+        return photo;
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
+    private String group;
         private String allPhones;
         private String email2;
         private String email3;
         private String allEmail;
+        private File photo;
 
     public String getEmail2() {
         return email2;
