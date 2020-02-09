@@ -4,7 +4,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pft.adressbook.model.ContactData;
 import pft.adressbook.model.Contacts;
-import pft.adressbook.model.GroupData;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -22,6 +21,8 @@ public class ContactCreationTest extends TestBase {
     public Iterator<Object[]> validContacts() {
         List<Object[]> list = new ArrayList<Object[]>();
         list.add(new Object[]{new ContactData().withName("Петр").withFamily("Петров").withAddress("Москва").withGroup("test1")});
+        list.add(new Object[]{new ContactData().withName("Петр").withFamily("Петров").withAddress("Москва").withGroup("test1")});
+
 
         return list.iterator();
     }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pft.adressbook.tests.GroupCreationTests" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-02-09T12:36:19" hostname="Earp" time="0.0">
+  <properties/>
+  <testcase name="testGroupCreation" classname="pft.adressbook.tests.GroupCreationTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
