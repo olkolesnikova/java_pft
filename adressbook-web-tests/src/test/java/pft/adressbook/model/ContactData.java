@@ -1,5 +1,6 @@
 package pft.adressbook.model;
 
+import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
@@ -9,12 +10,19 @@ import java.io.File;
 public class ContactData {
         @XStreamOmitField
         private int id = Integer.MAX_VALUE;
+        @Expose
         private String name;
+        @Expose
         private String family;
+        @Expose
         private String address;
+        @Expose
         private String telephone;
+        @Expose
         private String mobile;
+        @Expose
         private String work;
+        @Expose
         private String email;
 
     public File getPhoto() {
