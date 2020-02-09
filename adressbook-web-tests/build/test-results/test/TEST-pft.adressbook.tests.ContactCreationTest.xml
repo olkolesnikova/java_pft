@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.ContactCreationTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-02-09T14:55:15" hostname="Earp" time="15.706">
+<testsuite name="pft.adressbook.tests.ContactCreationTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-02-09T15:05:14" hostname="Earp" time="15.874">
   <properties/>
-  <testcase name="testContactCreation[0](ContactData{name='Name 0', family='Family 0'})" classname="pft.adressbook.tests.ContactCreationTest" time="8.082">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;&#13;&#10;     but: was &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;
-     but: was &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;
+  <testcase name="testContactCreation[0](ContactData{name='Name 0', family='Family 0'})" classname="pft.adressbook.tests.ContactCreationTest" time="8.266">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 1', family='Family 1'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;&#13;&#10;     but: was &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 1', family='Family 1'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 1', family='Family 1'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;
+     but: was &lt;[ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 1', family='Family 1'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Name 0', family='Family 0'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}, ContactData{name='Петр', family='Петров'}]&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at pft.adressbook.tests.ContactCreationTest.testContactCreation(ContactCreationTest.java:50)
+	at pft.adressbook.tests.ContactCreationTest.testContactCreation(ContactCreationTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,13 +59,13 @@ Expected: &lt;[ContactData{name='Петр', family='Петров'}, ContactData{
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testContactCreation[1](ContactData{name='Name 1', family='Family 1'})" classname="pft.adressbook.tests.ContactCreationTest" time="7.623">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;9&gt;&#13;&#10;     but: was &lt;10&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &lt;9&gt;
-     but: was &lt;10&gt;
+  <testcase name="testContactCreation[1](ContactData{name='Name 1', family='Family 1'})" classname="pft.adressbook.tests.ContactCreationTest" time="7.607">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;11&gt;&#13;&#10;     but: was &lt;12&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;11&gt;
+     but: was &lt;12&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at pft.adressbook.tests.ContactCreationTest.testContactCreation(ContactCreationTest.java:48)
+	at pft.adressbook.tests.ContactCreationTest.testContactCreation(ContactCreationTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
