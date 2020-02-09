@@ -1,5 +1,7 @@
 package pft.adressbook.tests;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,7 +24,7 @@ public class ContactCreationTest extends TestBase {
 
 
     @DataProvider
-    public Iterator<Object[]> validContacts() throws IOException {
+    public Iterator<Object[]> validContactsFromXml() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")));
         String xml = "";
         String line = reader.readLine();
@@ -36,16 +38,29 @@ public class ContactCreationTest extends TestBase {
         return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
 
-    @Test(dataProvider = "validContacts")
+    @DataProvider
+    public Iterator<Object[]> validContactsFromJson() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")));
+        String json = "";
+        String line = reader.readLine();
+        while (line != null){
+            json += line;
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<ContactData> groups = gson.fromJson(json, new TypeToken<List<ContactData>>() {}.getType());
+        return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
+
+    }
+
+    @Test(dataProvider = "validContactsFromJson")
   public void testContactCreation(ContactData contact) throws Exception {
         Contacts before = app.getContactHelper().all();
         app.getContactHelper().gotoNewContactPage();
         File photo = new File("src/test/resources/volk.jpg");
-
         app.getContactHelper().fillContactForm(contact);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();
-
         assertThat(app.getContactHelper().getContactCount(), equalTo(before.size() + 1));
         Contacts after = app.getContactHelper().all();
         assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
