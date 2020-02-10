@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.ContactDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-10T11:28:27" hostname="Earp" time="4.954">
-  <properties/>
-  <testcase name="testContactDeletion" classname="pft.adressbook.tests.ContactDeletionTests" time="4.954"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
