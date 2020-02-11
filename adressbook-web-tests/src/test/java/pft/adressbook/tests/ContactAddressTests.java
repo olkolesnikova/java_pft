@@ -19,7 +19,7 @@ public class ContactAddressTests extends TestBase{
             app.getContactHelper().createContact(new ContactData()
                     .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251")
                     .withMobile("111").withWork("222")
-                    .withEmail("sokolov85@mail.ru").withGroup("test1"), true);
+                    .withEmail("sokolov85@mail.ru"));
         }
     }
 

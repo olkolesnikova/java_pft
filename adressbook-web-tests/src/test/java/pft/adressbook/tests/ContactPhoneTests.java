@@ -17,7 +17,7 @@ public class ContactPhoneTests extends TestBase {
     public void ensurePreconditions() {
         if (app.getContactHelper().all().size() == 0) {
             app.getContactHelper().createContact(new ContactData()
-                    .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru").withGroup("test1"), true);
+                    .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251").withEmail("sokolov85@mail.ru"));
         }
     }
 

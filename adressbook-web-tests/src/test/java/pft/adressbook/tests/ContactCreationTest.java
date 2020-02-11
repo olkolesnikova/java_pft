@@ -49,20 +49,17 @@ public class ContactCreationTest extends TestBase {
                 line = reader.readLine();
             }
             Gson gson = new Gson();
-            List<ContactData> groups = gson.fromJson(json, new TypeToken<List<ContactData>>() {
+            List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>() {
             }.getType());
-            return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+            return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
         }
     }
 
     @Test(dataProvider = "validContactsFromJson")
   public void testContactCreation(ContactData contact) throws Exception {
         Contacts before = app.getContactHelper().all();
-        app.getContactHelper().gotoNewContactPage();
+        app.getContactHelper().createContact(contact);
         File photo = new File("src/test/resources/volk.jpg");
-        app.getContactHelper().fillContactForm(contact);
-        app.getContactHelper().submitContactCreation();
-        app.getContactHelper().returnToHomePage();
         assertThat(app.getContactHelper().getContactCount(), equalTo(before.size() + 1));
         Contacts after = app.getContactHelper().all();
         assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
