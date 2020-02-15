@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.ContactCreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-11T15:42:10" hostname="Earp" time="21.808">
+<testsuite name="pft.adressbook.tests.ContactCreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-11T17:40:46" hostname="Earp" time="22.483">
   <properties/>
-  <testcase name="testContactCreation[0](ContactData{name='Name 0', family='Family 0'})" classname="pft.adressbook.tests.ContactCreationTest" time="11.713"/>
-  <testcase name="testContactCreation[1](ContactData{name='Name 1', family='Family 1'})" classname="pft.adressbook.tests.ContactCreationTest" time="10.094"/>
+  <testcase name="testContactCreation[0](ContactData{name='Name 0', family='Family 0'})" classname="pft.adressbook.tests.ContactCreationTest" time="12.863"/>
+  <testcase name="testContactCreation[1](ContactData{name='Name 1', family='Family 1'})" classname="pft.adressbook.tests.ContactCreationTest" time="9.619"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

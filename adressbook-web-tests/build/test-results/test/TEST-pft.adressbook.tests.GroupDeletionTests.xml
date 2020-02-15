@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.GroupDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-10T11:55:00" hostname="Earp" time="3.345">
+<testsuite name="pft.adressbook.tests.GroupDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-15T10:43:23" hostname="Earp" time="4.124">
   <properties/>
-  <testcase name="testGroupDeletion" classname="pft.adressbook.tests.GroupDeletionTests" time="3.345"/>
+  <testcase name="testGroupDeletion" classname="pft.adressbook.tests.GroupDeletionTests" time="4.124"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

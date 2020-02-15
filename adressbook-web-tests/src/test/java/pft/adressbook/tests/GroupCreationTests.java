@@ -3,6 +3,8 @@ package pft.adressbook.tests;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pft.adressbook.model.GroupData;
@@ -63,9 +65,9 @@ public class GroupCreationTests extends TestBase {
     app.group().create(group);
     assertThat(app.group().Count(), equalTo(before.size() + 1));
     Groups after = app.group().all();
-
     assertThat(after, equalTo(before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
-  }
+
+    }
 
   @Test(enabled = false)
   public void testBadGroupCreation() {
