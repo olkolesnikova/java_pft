@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.adressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-15T09:37:21" hostname="Earp" time="16.992">
-  <properties/>
-  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="pft.adressbook.tests.GroupCreationTests" time="7.748"/>
-  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="pft.adressbook.tests.GroupCreationTests" time="4.878"/>
-  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="pft.adressbook.tests.GroupCreationTests" time="4.362"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

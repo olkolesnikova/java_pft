@@ -123,3 +123,4 @@ adressbook-web-tests/build/tmp/test/jar_extract_926970110897281873_tmp
 #tmp
 adressbook-web-tests/build/tmp/test/jar
 adressbook-web-tests/build/tmp/
+*.log
