@@ -3,43 +3,91 @@ package pft.adressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 @XStreamAlias("contact")
+@Entity
+@Table(name = "addressbook")
 
 public class ContactData {
         @XStreamOmitField
+        @Id
+        @Column(name = "id")
         private int id = Integer.MAX_VALUE;
+
         @Expose
+        @Column(name = "firstname")
         private String name;
+
         @Expose
+        @Column(name = "lastname")
         private String family;
+
         @Expose
+        @Column(name = "address")
+        @Type(type = "text")
         private String address;
+
         @Expose
+        @Column(name = "home")
+        @Type(type = "text")
         private String telephone;
+
         @Expose
+        @Column(name = "mobile")
+        @Type(type = "text")
         private String mobile;
+
         @Expose
+        @Column(name = "work")
+        @Type(type = "text")
         private String work;
+
         @Expose
+        @Column(name = "email")
+        @Type(type = "text")
         private String email;
 
+
+
     public File getPhoto() {
-        return photo;
+        return new File(photo);
     }
 
     public ContactData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
-    private String group;
+        @Transient
         private String allPhones;
+
+        @Transient
         private String email2;
+
+        @Transient
         private String email3;
+
+        @Transient
         private String allEmail;
-        private File photo;
+
+        @Column(name = "photo")
+        @Type(type = "text")
+        private String photo;
+
+        @Transient
+        private String group;
+
+    public String getGroup() {
+        return group;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
+    }
 
     public String getEmail2() {
         return email2;
@@ -102,10 +150,6 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
 
     public ContactData withId(int id) {
         this.id = id;
@@ -147,9 +191,6 @@ public class ContactData {
             return email;
         }
 
-    public String getGroup() {
-        return group;
-    }
 
     public String getMobile() {
         return mobile;

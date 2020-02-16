@@ -3,6 +3,8 @@ package pft.adressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import pft.adressbook.model.ContactData;
 import pft.adressbook.model.Contacts;
 
@@ -28,7 +30,7 @@ public class ContactHelper extends HelperBase {
         wd.findElement(locator).click();
     }
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
 
         field(By.name("firstname"), contactData.getName());
         field(By.name("lastname"), contactData.getFamily());
@@ -38,10 +40,13 @@ public class ContactHelper extends HelperBase {
         field(By.name("work"), contactData.getWork());
         field(By.name("email"), contactData.getEmail());
 
+
         attach(By.name("photo"), contactData.getPhoto());
 
 
     }
+
+
 
     public void selectContact(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
@@ -61,7 +66,7 @@ public class ContactHelper extends HelperBase {
     public void modifyContact(ContactData contact) {
         selectContactById(contact.getId());
         gotoEdit(contact.getId());
-        fillContactForm(contact);
+        fillContactForm(contact, true);
         getUpdate();
         contactCache = null;
         returnToHomePage();
@@ -84,7 +89,7 @@ public class ContactHelper extends HelperBase {
 
     public void createContact(ContactData contact) {
         gotoNewContactPage();
-        fillContactForm(contact);
+        fillContactForm(contact, true);
         submitContactCreation();
         returnToHomePage();
         contactCache = null;
