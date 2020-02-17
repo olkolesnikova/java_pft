@@ -1,16 +1,14 @@
 package pft.adressbook.tests;
 
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.SharedSessionContract;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pft.adressbook.model.ContactData;
 import pft.adressbook.model.GroupData;
-import pft.adressbook.model.Groups;
 
 import java.util.List;
 
@@ -37,15 +35,18 @@ public class HbConnectionTest {
 
     @Test
 
-    public void testHbConnection () {
+    public void testHbConnection() {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        List<ContactData> result = session.createQuery("from ContactData").list();
-        for (ContactData contact : result) {
-            System.out.println(contact);
+        List<GroupData> result = session.createQuery( "from GroupData" ).list();
+        for ( GroupData group : result ) {
+            System.out.println(group);
         }
         session.getTransaction().commit();
         session.close();
     }
 
+
 }
+
+
