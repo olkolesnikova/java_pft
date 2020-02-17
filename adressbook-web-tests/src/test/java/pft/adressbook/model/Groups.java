@@ -19,9 +19,7 @@ private Set<GroupData> delegate;
         this.delegate = new HashSet<GroupData>();
     }
 
-    public Groups(Collection<GroupData> groups) {
-        this.delegate = new HashSet<GroupData>(groups);
-    }
+    public Groups(Collection<GroupData> groups) {this.delegate = new HashSet<GroupData>(groups); }
 
     @Override
     protected Set<GroupData> delegate() {

@@ -124,7 +124,7 @@ public class ContactHelper extends HelperBase {
             String group = cells.get(6).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             contacts.add(new ContactData().withId(id).withFamily(family).withName(name).withAddress(address).withEmail(email)
-                    .withTelephone(telephone).withGroup(group));
+                    .withTelephone(telephone));
         }
         return contacts;
     }
@@ -150,7 +150,7 @@ public class ContactHelper extends HelperBase {
             String group = cells.get(6).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             contactCache.add(new ContactData().withId(id).withFamily(family).withName(name).withAddress(address)
-                    .withAllPhones(allPhones).withAllEmail(allEmail).withGroup(group));
+                    .withAllPhones(allPhones).withAllEmail(allEmail));
         }
         return new Contacts(contactCache);
     }

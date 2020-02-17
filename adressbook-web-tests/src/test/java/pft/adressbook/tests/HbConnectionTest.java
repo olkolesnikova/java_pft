@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pft.adressbook.model.ContactData;
 import pft.adressbook.model.GroupData;
+import pft.adressbook.model.Groups;
 
 import java.util.List;
 
@@ -42,6 +43,8 @@ public class HbConnectionTest {
         List<ContactData> result = session.createQuery("from ContactData").list();
         for (ContactData contact : result) {
             System.out.println(contact);
+            System.out.println(contact.getGroups());
+
         }
         session.getTransaction().commit();
         session.close();

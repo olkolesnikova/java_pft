@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pft.adressbook.tests.HbConnectionTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-17T10:47:45" hostname="Earp" time="0.37">
+  <properties/>
+  <testcase name="testHbConnection" classname="pft.adressbook.tests.HbConnectionTest" time="0.37">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.hibernate.type.EntityType.toLoggableString(EntityType.java:502)
+	at org.hibernate.type.CollectionType.renderLoggableString(CollectionType.java:223)
+	at org.hibernate.type.CollectionType.toLoggableString(CollectionType.java:206)
+	at org.hibernate.internal.util.EntityPrinter.toString(EntityPrinter.java:73)
+	at org.hibernate.internal.util.EntityPrinter.toString(EntityPrinter.java:117)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.logFlushResults(AbstractFlushingEventListener.java:127)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:103)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:108)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1318)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:405)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2665)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1833)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at pft.adressbook.tests.HbConnectionTest.testHbConnection(HbConnectionTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[15:47:45.757 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+15:47:45.763 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+15:47:45.763 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+15:47:45.773 [Test worker] DEBUG org.hibernate.orm.query.plan.cache - Creating and caching HqlInterpretation - from ContactData
+15:47:45.920 [Test worker] DEBUG o.h.q.h.i.SemanticQueryBuilder - Handling root path - ContactData
+15:47:45.924 [Test worker] DEBUG o.h.q.h.i.SemanticQueryBuilder - Encountered implicit select clause : fromContactData
+15:47:45.932 [Test worker] DEBUG org.hibernate.orm.query.sqm.ast - SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+            -> [root] - `pft.adressbook.model.ContactData`
+            <- [root] - `pft.adressbook.model.ContactData`
+          <- [selection]
+        <- [select]
+        -> [from]
+          -> [root] - `pft.adressbook.model.ContactData`
+          <- [root] - `pft.adressbook.model.ContactData`
+        <- [from]
+      <- [query-spec]
+    <- [select]
+
+15:47:45.951 [Test worker] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : c1_0
+15:47:45.965 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - Error processing node {query-spec}
+java.lang.NullPointerException: null
+	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitQuerySpec$18(SqlTreePrinter.java:250)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+	at org.hibernate.sql.ast.SqlTreePrinter.visitQuerySpec(SqlTreePrinter.java:234)
+	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitStatement$0(SqlTreePrinter.java:78)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+	at org.hibernate.sql.ast.SqlTreePrinter.visitStatement(SqlTreePrinter.java:76)
+	at org.hibernate.sql.ast.SqlTreePrinter.print(SqlTreePrinter.java:63)
+	at org.hibernate.sql.ast.spi.StandardSqlAstSelectTranslator.translate(StandardSqlAstSelectTranslator.java:85)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.buildCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:230)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.resolveCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:191)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:153)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:413)
+	at org.hibernate.query.spi.AbstractQuery.list(AbstractQuery.java:1356)
+	at pft.adressbook.tests.HbConnectionTest.testHbConnection(HbConnectionTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+15:47:45.968 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    -> [select-statement]
+      -> [query-spec]
+        -> [select]
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@cdf81d2a
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@539d1d65
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@a57c792d
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@11aafe90
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@17c720b1
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@b2d36dec
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@a6157b43
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@2ea2e04e
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@2ea9b660
+        <- [select]
+        -> [from]
+          -> [table-group]
+            -> [addressbook as c1_0]
+          <- [table-group]
+        <- [from]
+      <- [query-spec]
+    <- [select-statement]
+
+15:47:45.980 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+15:47:45.989 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : org.hibernate.sql.results.graph.collection.internal.DelayedCollectionAssembler$InitializerImpl@1a41905e
+15:47:45.990 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.ContactData)
+15:47:45.995 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+Hibernate: select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+15:47:46.004 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+15:47:46.006 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+15:47:46.007 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 174
+15:47:46.013 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#174] : ContactData{name='null', family='null'}
+15:47:46.014 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Екатеринбург]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [sokolov85@mail.ru]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Соколов]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [222]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Олег]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [4951251]
+15:47:46.015 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [333]
+15:47:46.023 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#174
+15:47:46.023 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+ContactData{name='Олег', family='Соколов'}
+15:47:46.026 [Test worker] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_0
+15:47:46.026 [Test worker] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_1
+15:47:46.028 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - Error processing node {query-spec}
+java.lang.NullPointerException: null
+	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitQuerySpec$18(SqlTreePrinter.java:250)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+	at org.hibernate.sql.ast.SqlTreePrinter.visitQuerySpec(SqlTreePrinter.java:234)
+	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitStatement$0(SqlTreePrinter.java:78)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+	at org.hibernate.sql.ast.SqlTreePrinter.visitStatement(SqlTreePrinter.java:76)
+	at org.hibernate.sql.ast.SqlTreePrinter.print(SqlTreePrinter.java:63)
+	at org.hibernate.sql.ast.spi.StandardSqlAstSelectTranslator.translate(StandardSqlAstSelectTranslator.java:85)
+	at org.hibernate.loader.ast.internal.CollectionLoaderSingleKey.load(CollectionLoaderSingleKey.java:99)
+	at org.hibernate.persister.collection.AbstractCollectionPersister.initialize(AbstractCollectionPersister.java:749)
+	at org.hibernate.event.internal.DefaultInitializeCollectionEventListener.onInitializeCollection(DefaultInitializeCollectionEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:108)
+	at org.hibernate.internal.SessionImpl.initializeCollection(SessionImpl.java:1594)
+	at org.hibernate.collection.internal.AbstractPersistentCollection$4.doWork(AbstractPersistentCollection.java:591)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:266)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:587)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:151)
+	at org.hibernate.collection.internal.AbstractPersistentCollection$1.doWork(AbstractPersistentCollection.java:180)
+	at org.hibernate.collection.internal.AbstractPersistentCollection$1.doWork(AbstractPersistentCollection.java:165)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:266)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:164)
+	at org.hibernate.collection.internal.PersistentSet.size(PersistentSet.java:173)
+	at java.util.HashSet.<init>(HashSet.java:119)
+	at pft.adressbook.model.Groups.<init>(Groups.java:22)
+	at pft.adressbook.model.ContactData.getGroups(ContactData.java:88)
+	at pft.adressbook.tests.HbConnectionTest.testHbConnection(HbConnectionTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+15:47:46.029 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    -> [select-statement]
+      -> [query-spec]
+        -> [select]
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@a1910a2e
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@352026ad
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@ee71ba0d
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@f147eadf
+          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@6be2833d
+        <- [select]
+        -> [from]
+          -> [table-group]
+            -> [address_in_groups as g1_0]
+            -> [join]
+              -> [group_list as g1_1]
+              -> [left outer]
+              -> [on]
+                -> [equal]
+                  -> [{g1_0}.{group_id}]
+                  -> [{g1_1}.{group_id}]
+                <- [equal]
+              <- [on]
+            <- [join]
+          <- [table-group]
+        <- [from]
+        -> [where]
+          -> [equal]
+            -> [{g1_0}.{id}]
+            -> [parameter]
+          <- [equal]
+        <- [where]
+      <- [query-spec]
+    <- [select-statement]
+
+15:47:46.031 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+15:47:46.032 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : org.hibernate.sql.results.graph.collection.internal.DelayedCollectionAssembler$InitializerImpl@2415670b
+15:47:46.032 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityFetchInitializer(pft.adressbook.model.ContactData.groups.{element})
+15:47:46.032 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityFetchInitializer(pft.adressbook.model.ContactData.groups.{element})
+15:47:46.033 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : SetInitializer(pft.adressbook.model.ContactData.groups)
+15:47:46.034 [Test worker] DEBUG org.hibernate.SQL - select g1_0.id, g1_1.group_id, g1_1.group_footer, g1_1.group_header, g1_1.group_name from address_in_groups as g1_0 left outer join group_list as g1_1 on g1_0.group_id = g1_1.group_id where g1_0.id = ?
+Hibernate: select g1_0.id, g1_1.group_id, g1_1.group_footer, g1_1.group_header, g1_1.group_name from address_in_groups as g1_0 left outer join group_list as g1_1 on g1_0.group_id = g1_1.group_id where g1_0.id = ?
+15:47:46.035 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+15:47:46.035 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [179]
+15:47:46.035 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityInitializerJoinedFetch) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData.groups.{element}]): 179
+15:47:46.036 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityInitializerJoinedFetch) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData.groups.{element}]): 179
+15:47:46.036 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+15:47:46.036 [Test worker] DEBUG o.h.o.sql.resultsloading.collection - (o.h.s.r.g.c.i.SetInitializer) Current row collection key : pft.adressbook.model.ContactData.groups#174
+15:47:46.037 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData.groups.{element}#179] : GroupData{id='179', name='null'}
+15:47:46.037 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityInitializerJoinedFetch) Found existing loading entry [pft.adressbook.model.ContactData.groups.{element}#179] - using loading instance
+15:47:46.039 [Test worker] DEBUG o.h.o.sql.resultsloading.collection - (o.h.s.r.g.c.i.SetInitializer) Responsible for loading collection [pft.adressbook.model.ContactData.groups#174] : pft.adressbook.model.ContactData.groups#174
+15:47:46.039 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [footer 1]
+15:47:46.039 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [header 1]
+15:47:46.039 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [test 1]
+15:47:46.040 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData.groups.{element}#179
+15:47:46.040 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [footer 1]
+15:47:46.040 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [header 1]
+15:47:46.040 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [test 1]
+15:47:46.040 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData.groups.{element}#179
+15:47:46.040 [Test worker] DEBUG o.h.o.sql.resultsloading.collection - (o.h.s.r.g.c.i.SetInitializer) Reading element from row for collection [pft.adressbook.model.ContactData.groups#174] -> pft.adressbook.model.ContactData.groups#174
+15:47:46.042 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[GroupData{id='179', name='test 1'}]
+15:47:46.043 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+15:47:46.044 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+15:47:46.052 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+15:47:46.061 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.ContactData.groups#174], was: [pft.adressbook.model.ContactData.groups#174] (initialized)
+15:47:46.062 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.GroupData.contacts#179], was: [pft.adressbook.model.GroupData.contacts#179] (uninitialized)
+15:47:46.064 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+15:47:46.064 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+15:47:46.065 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+15:47:46.065 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=179, contacts=<uninitialized>}
+15:47:46.068 [Test worker] DEBUG o.h.r.t.b.j.i.JdbcResourceLocalTransactionCoordinatorImpl - JDBC transaction marked for rollback-only (exception provided for stack trace)
+java.lang.Exception: exception just for purpose of providing stack trace
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.markRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:324)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.markRollbackOnly(TransactionImpl.java:203)
+	at org.hibernate.internal.AbstractSharedSessionContract.markForRollbackOnly(AbstractSharedSessionContract.java:390)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:191)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1322)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:405)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2665)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1833)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at pft.adressbook.tests.HbConnectionTest.testHbConnection(HbConnectionTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+15:47:46.069 [Test worker] DEBUG o.h.r.t.b.j.i.JdbcResourceLocalTransactionCoordinatorImpl - JDBC transaction marked for rollback-only (exception provided for stack trace)
+java.lang.Exception: exception just for purpose of providing stack trace
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.markRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:324)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:192)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at pft.adressbook.tests.HbConnectionTest.testHbConnection(HbConnectionTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+15:47:46.071 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+15:47:46.072 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
