@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class pft.adressbook.tests.GroupDeletionTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class pft.adressbook.tests.GroupDeletionTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/pft.adressbook.tests.html">pft.adressbook.tests</a> &gt; GroupDeletionTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.088s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGroupDeletion</td>
+<td class="success">1.088s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:50:29.720 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+11:50:29.722 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+11:50:29.726 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+11:50:29.726 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.GroupData)
+11:50:29.727 [Test worker] DEBUG org.hibernate.SQL - select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
+Hibernate: select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
+11:50:29.729 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:29.729 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [84]
+11:50:29.730 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 84
+11:50:29.730 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#84] : GroupData{id='84', name='null'}
+11:50:29.730 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
+11:50:29.730 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
+11:50:29.730 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
+11:50:29.731 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#84
+11:50:29.731 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:29.733 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [85]
+11:50:29.734 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 85
+11:50:29.735 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#85] : GroupData{id='85', name='null'}
+11:50:29.736 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
+11:50:29.736 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
+11:50:29.736 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
+11:50:29.738 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#85
+11:50:29.738 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:29.738 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [175]
+11:50:29.739 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 175
+11:50:29.739 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#175] : GroupData{id='175', name='null'}
+11:50:29.739 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
+11:50:29.739 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
+11:50:29.740 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
+11:50:29.740 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#175
+11:50:29.740 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:29.740 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [176]
+11:50:29.741 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 176
+11:50:29.741 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#176] : GroupData{id='176', name='null'}
+11:50:29.741 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 1]
+11:50:29.741 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 1]
+11:50:29.741 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 1]
+11:50:29.742 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#176
+11:50:29.742 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:29.742 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [177]
+11:50:29.743 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 177
+11:50:29.743 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#177] : GroupData{id='177', name='null'}
+11:50:29.743 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
+11:50:29.744 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
+11:50:29.744 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
+11:50:29.744 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#177
+11:50:29.745 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+11:50:29.745 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+11:50:29.745 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+11:50:29.745 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+11:50:29.746 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+11:50:29.746 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+11:50:29.746 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+11:50:29.746 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=84}
+11:50:29.747 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=85}
+11:50:29.747 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=175}
+11:50:29.747 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=176}
+11:50:29.747 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=177}
+11:50:29.751 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:50:29.754 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:50:30.478 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+11:50:30.478 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+11:50:30.480 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+11:50:30.482 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.GroupData)
+11:50:30.482 [Test worker] DEBUG org.hibernate.SQL - select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
+Hibernate: select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
+11:50:30.488 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:30.488 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [85]
+11:50:30.488 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 85
+11:50:30.489 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#85] : GroupData{id='85', name='null'}
+11:50:30.489 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
+11:50:30.489 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
+11:50:30.489 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
+11:50:30.489 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#85
+11:50:30.490 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:30.490 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [175]
+11:50:30.491 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 175
+11:50:30.491 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#175] : GroupData{id='175', name='null'}
+11:50:30.491 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
+11:50:30.492 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
+11:50:30.492 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
+11:50:30.492 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#175
+11:50:30.492 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:30.492 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [176]
+11:50:30.493 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 176
+11:50:30.493 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#176] : GroupData{id='176', name='null'}
+11:50:30.493 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 1]
+11:50:30.493 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 1]
+11:50:30.493 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 1]
+11:50:30.493 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#176
+11:50:30.494 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+11:50:30.494 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [177]
+11:50:30.494 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 177
+11:50:30.494 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#177] : GroupData{id='177', name='null'}
+11:50:30.494 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
+11:50:30.494 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
+11:50:30.494 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
+11:50:30.495 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#177
+11:50:30.495 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+11:50:30.495 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+11:50:30.495 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+11:50:30.495 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+11:50:30.496 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+11:50:30.496 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+11:50:30.496 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+11:50:30.496 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=85}
+11:50:30.497 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=175}
+11:50:30.497 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=176}
+11:50:30.497 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=177}
+11:50:30.498 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:50:30.498 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.0.1</a> at 17.02.2020 11:50:31</p>
+</div>
+</div>
+</body>
+</html>
