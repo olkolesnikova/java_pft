@@ -1,147 +1,451 @@
-›13:25:32.360 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-K13:25:32.361 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
-¢13:25:32.365 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-13:25:32.366 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.GroupData)
-š13:25:32.366 [Test worker] DEBUG org.hibernate.SQL - select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
-pHibernate: select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
-\13:25:32.369 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-b13:25:32.369 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [85]
-µ13:25:32.369 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 85
-¨13:25:32.370 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#85] : GroupData{id='85', name='null'}
-e13:25:32.370 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
-e13:25:32.370 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
-e13:25:32.370 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
-Œ13:25:32.370 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#85
-\13:25:32.371 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.371 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [175]
-¶13:25:32.371 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 175
-ª13:25:32.371 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#175] : GroupData{id='175', name='null'}
-h13:25:32.372 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
-h13:25:32.372 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
-f13:25:32.372 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
-13:25:32.373 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#175
-\13:25:32.373 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.375 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [176]
-¶13:25:32.377 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 176
-ª13:25:32.378 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#176] : GroupData{id='176', name='null'}
-e13:25:32.379 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
-e13:25:32.379 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
-e13:25:32.380 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
-13:25:32.380 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#176
-\13:25:32.380 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.381 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [177]
-¶13:25:32.381 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 177
-ª13:25:32.381 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#177] : GroupData{id='177', name='null'}
-h13:25:32.381 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
-h13:25:32.382 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
-f13:25:32.382 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
-13:25:32.382 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#177
-\13:25:32.382 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.382 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [178]
-¶13:25:32.382 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 178
-ª13:25:32.383 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#178] : GroupData{id='178', name='null'}
-h13:25:32.383 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
-h13:25:32.383 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
-f13:25:32.383 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
-13:25:32.384 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#178
-\13:25:32.384 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.384 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [179]
-¶13:25:32.384 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 179
-ª13:25:32.385 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#179] : GroupData{id='179', name='null'}
-h13:25:32.385 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 1]
-h13:25:32.385 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 1]
-f13:25:32.385 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 1]
-13:25:32.385 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#179
-\13:25:32.386 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:32.386 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [180]
-¶13:25:32.386 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 180
-ª13:25:32.386 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#180] : GroupData{id='180', name='null'}
-h13:25:32.386 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
-h13:25:32.386 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
-f13:25:32.387 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
-13:25:32.387 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#180
-13:25:32.387 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
-P13:25:32.388 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
-i13:25:32.388 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
-e13:25:32.388 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
-…13:25:32.389 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 7 objects
-‹13:25:32.389 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-V13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
-š13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=178}
-š13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=179}
-š13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=180}
-’13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=85}
-š13:25:32.389 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=175}
-“13:25:32.390 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=176}
-š13:25:32.391 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=177}
-„13:25:32.400 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-„13:25:32.402 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-›13:25:33.066 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-K13:25:33.066 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
-¢13:25:33.067 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-13:25:33.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.GroupData)
-š13:25:33.067 [Test worker] DEBUG org.hibernate.SQL - select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
-pHibernate: select g1_0.group_id, g1_0.group_footer, g1_0.group_header, g1_0.group_name from group_list as g1_0
-\13:25:33.068 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-b13:25:33.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [85]
-µ13:25:33.068 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 85
-¨13:25:33.068 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#85] : GroupData{id='85', name='null'}
-e13:25:33.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [test3]
-e13:25:33.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [test2]
-e13:25:33.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test1]
-Œ13:25:33.069 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#85
-\13:25:33.069 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:33.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [175]
-¶13:25:33.069 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 175
-ª13:25:33.069 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#175] : GroupData{id='175', name='null'}
-h13:25:33.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
-h13:25:33.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
-f13:25:33.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
-13:25:33.070 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#175
-\13:25:33.070 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:33.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [177]
-¶13:25:33.070 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 177
-ª13:25:33.070 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#177] : GroupData{id='177', name='null'}
-h13:25:33.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
-h13:25:33.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
-f13:25:33.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
-13:25:33.071 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#177
-\13:25:33.071 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:33.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [178]
-¶13:25:33.072 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 178
-ª13:25:33.074 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#178] : GroupData{id='178', name='null'}
-h13:25:33.075 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 0]
-h13:25:33.075 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 0]
-f13:25:33.075 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 0]
-13:25:33.076 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#178
-\13:25:33.076 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:33.076 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [179]
-¶13:25:33.078 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 179
-ª13:25:33.078 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#179] : GroupData{id='179', name='null'}
-h13:25:33.078 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 1]
-h13:25:33.078 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 1]
-f13:25:33.078 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 1]
-13:25:33.078 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#179
-\13:25:33.079 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
-c13:25:33.079 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [180]
-¶13:25:33.079 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.GroupData]): 180
-ª13:25:33.079 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.GroupData#180] : GroupData{id='180', name='null'}
-h13:25:33.079 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [footer 2]
-h13:25:33.080 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [header 2]
-f13:25:33.080 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [test 2]
-13:25:33.081 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.GroupData#180
-13:25:33.081 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
-P13:25:33.081 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
-i13:25:33.081 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
-e13:25:33.081 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
-…13:25:33.081 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 6 objects
-‹13:25:33.081 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-V13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
-š13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=178}
-š13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=179}
-š13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=180}
-’13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=test3, name=test1, header=test2, id=85}
-š13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=175}
-š13:25:33.081 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=177}
-„13:25:33.082 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-„13:25:33.082 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+n13:45:04.717 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+›13:45:04.725 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+K13:45:04.725 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+13:45:04.737 [Test worker] DEBUG org.hibernate.orm.query.plan.cache - Creating and caching HqlInterpretation - from ContactData
+d13:45:04.924 [Test worker] DEBUG o.h.q.h.i.SemanticQueryBuilder - Handling root path - ContactData
+x13:45:04.931 [Test worker] DEBUG o.h.q.h.i.SemanticQueryBuilder - Encountered implicit select clause : fromContactData
+W13:45:04.937 [Test worker] DEBUG org.hibernate.orm.query.sqm.ast - SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+;            -> [root] - `pft.adressbook.model.ContactData`
+;            <- [root] - `pft.adressbook.model.ContactData`
+          <- [selection]
+        <- [select]
+        -> [from]
+9          -> [root] - `pft.adressbook.model.ContactData`
+9          <- [root] - `pft.adressbook.model.ContactData`
+        <- [from]
+      <- [query-spec]
+    <- [select]
+
+b13:45:04.970 [Test worker] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : c1_0
+f13:45:04.990 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - Error processing node {query-spec}
+&java.lang.NullPointerException: null
+\	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitQuerySpec$18(SqlTreePrinter.java:250)
+K	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+K	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+R	at org.hibernate.sql.ast.SqlTreePrinter.visitQuerySpec(SqlTreePrinter.java:234)
+Z	at org.hibernate.sql.ast.SqlTreePrinter.lambda$visitStatement$0(SqlTreePrinter.java:78)
+K	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:189)
+K	at org.hibernate.sql.ast.SqlTreePrinter.logNode(SqlTreePrinter.java:178)
+Q	at org.hibernate.sql.ast.SqlTreePrinter.visitStatement(SqlTreePrinter.java:76)
+H	at org.hibernate.sql.ast.SqlTreePrinter.print(SqlTreePrinter.java:63)
+p	at org.hibernate.sql.ast.spi.StandardSqlAstSelectTranslator.translate(StandardSqlAstSelectTranslator.java:85)
+†	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.buildCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:230)
+ˆ	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.resolveCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:191)
+r	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:153)
+Q	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:413)
+I	at org.hibernate.query.spi.AbstractQuery.list(AbstractQuery.java:1356)
+C	at pft.adressbook.appmanager.DbHelper.contacts(DbHelper.java:38)
+_	at pft.adressbook.tests.ContactCreationTest.testContactCreation(ContactCreationTest.java:60)
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+]	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+@	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+D	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+F	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+W	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+I	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+;	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+4	at org.testng.TestRunner.run(TestRunner.java:632)
+:	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+B	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+=	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+6	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+F	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+A	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+?	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+:	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+-	at org.testng.TestNG.run(TestNG.java:1064)
+w	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+r	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+W	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
++	at java.lang.Thread.run(Thread.java:748)
+P13:45:04.993 [Test worker] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    -> [select-statement]
+      -> [query-spec]
+        -> [select]
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@cdf81d2a
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@539d1d65
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@a57c792d
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@11aafe90
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@17c720b1
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@b2d36dec
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@a6157b43
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@2ea2e04e
+S          selection - org.hibernate.sql.results.internal.SqlSelectionImpl@2ea9b660
+        <- [select]
+        -> [from]
+          -> [table-group]
+%            -> [addressbook as c1_0]
+          <- [table-group]
+        <- [from]
+      <- [query-spec]
+    <- [select-statement]
+
+¢13:45:05.003 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+13:45:05.021 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.ContactData)
+Æ13:45:05.026 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+œHibernate: select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+\13:45:05.046 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:05.052 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+¸13:45:05.053 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 174
+³13:45:05.055 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#174] : ContactData{name='null', family='null'}
+x13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³]
+q13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [sokolov85@mail.ru]
+n13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð²]
+c13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [222]
+h13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [ÐžÐ»ÐµÐ³]
+`13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+g13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [4951251]
+c13:45:05.057 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [333]
+13:45:05.065 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#174
+\13:45:05.066 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:05.066 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [202]
+¸13:45:05.066 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 202
+³13:45:05.067 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#202] : ContactData{name='null', family='null'}
+l13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:05.067 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:05.067 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#202
+\13:45:05.068 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:05.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [203]
+¸13:45:05.068 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 203
+³13:45:05.068 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#203] : ContactData{name='null', family='null'}
+l13:45:05.068 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Petrov]
+d13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Petr]
+`13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:05.069 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:05.069 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#203
+\13:45:05.070 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:05.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [204]
+¸13:45:05.070 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 204
+³13:45:05.070 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#204] : ContactData{name='null', family='null'}
+l13:45:05.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:05.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:05.070 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:05.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:05.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:05.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:05.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:05.071 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:05.071 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#204
+13:45:05.072 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+P13:45:05.072 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+i13:45:05.073 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+e13:45:05.082 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+…13:45:05.088 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+‹13:45:05.088 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+V13:45:05.089 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+ÿ13:45:05.090 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³, work=333, mobile=222, name=ÐžÐ»ÐµÐ³, photo=, telephone=4951251, id=174, family=Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð², email=sokolov85@mail.ru}
+Ù13:45:05.090 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Petr, photo=, telephone=null, id=203, family=Petrov, email=null}
+Ù13:45:05.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=204, family=Ivanov, email=null}
+Ù13:45:05.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=202, family=Ivanov, email=null}
+„13:45:05.093 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+„13:45:05.096 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+›13:45:12.640 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+K13:45:12.641 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+¢13:45:12.645 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+13:45:12.648 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.ContactData)
+Æ13:45:12.648 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+œHibernate: select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+\13:45:12.650 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.651 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+¸13:45:12.651 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 174
+³13:45:12.651 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#174] : ContactData{name='null', family='null'}
+x13:45:12.652 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³]
+q13:45:12.652 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [sokolov85@mail.ru]
+n13:45:12.652 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð²]
+c13:45:12.652 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [222]
+h13:45:12.652 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [ÐžÐ»ÐµÐ³]
+`13:45:12.653 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+g13:45:12.653 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [4951251]
+c13:45:12.653 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [333]
+13:45:12.653 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#174
+\13:45:12.654 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.654 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [202]
+¸13:45:12.655 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 202
+³13:45:12.657 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#202] : ContactData{name='null', family='null'}
+l13:45:12.657 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.658 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.658 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.658 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.659 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.659 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.659 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.659 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.659 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#202
+\13:45:12.660 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.661 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [203]
+¸13:45:12.662 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 203
+³13:45:12.662 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#203] : ContactData{name='null', family='null'}
+l13:45:12.662 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.662 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.662 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Petrov]
+d13:45:12.663 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.663 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Petr]
+`13:45:12.663 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.664 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.664 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.664 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#203
+\13:45:12.664 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.664 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [204]
+¸13:45:12.664 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 204
+³13:45:12.664 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#204] : ContactData{name='null', family='null'}
+l13:45:12.664 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.665 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.665 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#204
+\13:45:12.665 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [206]
+¸13:45:12.666 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 206
+³13:45:12.666 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#206] : ContactData{name='null', family='null'}
+l13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.666 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.668 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.668 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#206
+13:45:12.668 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+P13:45:12.671 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+i13:45:12.672 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+e13:45:12.673 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+…13:45:12.674 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+‹13:45:12.675 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+V13:45:12.675 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+ÿ13:45:12.676 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³, work=333, mobile=222, name=ÐžÐ»ÐµÐ³, photo=, telephone=4951251, id=174, family=Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð², email=sokolov85@mail.ru}
+Ù13:45:12.676 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=206, family=Ivanov, email=null}
+Ù13:45:12.676 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Petr, photo=, telephone=null, id=203, family=Petrov, email=null}
+Ù13:45:12.676 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=204, family=Ivanov, email=null}
+Ù13:45:12.676 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=202, family=Ivanov, email=null}
+„13:45:12.677 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+„13:45:12.678 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+›13:45:12.690 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+K13:45:12.690 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+¢13:45:12.691 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+13:45:12.691 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.ContactData)
+Æ13:45:12.691 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+œHibernate: select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+\13:45:12.693 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+¸13:45:12.693 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 174
+³13:45:12.693 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#174] : ContactData{name='null', family='null'}
+x13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³]
+q13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [sokolov85@mail.ru]
+n13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð²]
+c13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [222]
+h13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [ÐžÐ»ÐµÐ³]
+`13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+g13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [4951251]
+c13:45:12.693 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [333]
+13:45:12.694 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#174
+\13:45:12.694 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [202]
+¸13:45:12.694 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 202
+³13:45:12.694 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#202] : ContactData{name='null', family='null'}
+l13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.694 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.694 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#202
+\13:45:12.695 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [203]
+¸13:45:12.695 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 203
+³13:45:12.695 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#203] : ContactData{name='null', family='null'}
+l13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Petrov]
+d13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Petr]
+`13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.695 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.695 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#203
+\13:45:12.695 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.696 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [204]
+¸13:45:12.696 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 204
+³13:45:12.696 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#204] : ContactData{name='null', family='null'}
+l13:45:12.696 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.696 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.696 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.697 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.697 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.697 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.698 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#204
+\13:45:12.698 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [206]
+¸13:45:12.698 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 206
+³13:45:12.698 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#206] : ContactData{name='null', family='null'}
+l13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:12.698 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:12.699 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#206
+13:45:12.699 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+P13:45:12.699 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+i13:45:12.699 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+e13:45:12.699 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+…13:45:12.700 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+‹13:45:12.700 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+V13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+ÿ13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³, work=333, mobile=222, name=ÐžÐ»ÐµÐ³, photo=, telephone=4951251, id=174, family=Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð², email=sokolov85@mail.ru}
+Ù13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=206, family=Ivanov, email=null}
+Ù13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Petr, photo=, telephone=null, id=203, family=Petrov, email=null}
+Ù13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=204, family=Ivanov, email=null}
+Ù13:45:12.700 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=202, family=Ivanov, email=null}
+„13:45:12.701 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+„13:45:12.703 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+›13:45:20.236 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+K13:45:20.236 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+¢13:45:20.246 [Test worker] DEBUG o.h.s.e.i.JdbcSelectExecutorStandardImpl - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+13:45:20.248 [Test worker] DEBUG org.hibernate.orm.sql.results - Adding initializer : EntityRootInitializer(pft.adressbook.model.ContactData)
+Æ13:45:20.249 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+œHibernate: select c1_0.id, c1_0.address, c1_0.email, c1_0.lastname, c1_0.mobile, c1_0.firstname, c1_0.photo, c1_0.home, c1_0.work from addressbook as c1_0
+\13:45:20.253 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.253 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [174]
+¸13:45:20.253 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 174
+³13:45:20.253 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#174] : ContactData{name='null', family='null'}
+x13:45:20.253 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³]
+q13:45:20.253 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [sokolov85@mail.ru]
+n13:45:20.253 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð²]
+c13:45:20.254 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [222]
+h13:45:20.254 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [ÐžÐ»ÐµÐ³]
+`13:45:20.254 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+g13:45:20.254 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [4951251]
+c13:45:20.254 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [333]
+13:45:20.254 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#174
+\13:45:20.254 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.255 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [202]
+¸13:45:20.255 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 202
+³13:45:20.255 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#202] : ContactData{name='null', family='null'}
+l13:45:20.255 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:20.255 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:20.255 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:20.255 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:20.256 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:20.256 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:20.256 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:20.256 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:20.256 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#202
+\13:45:20.257 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.257 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [203]
+¸13:45:20.257 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 203
+³13:45:20.257 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#203] : ContactData{name='null', family='null'}
+l13:45:20.257 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:20.258 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:20.260 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Petrov]
+d13:45:20.261 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:20.261 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Petr]
+`13:45:20.261 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:20.261 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:20.261 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:20.263 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#203
+\13:45:20.263 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.263 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [204]
+¸13:45:20.264 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 204
+³13:45:20.265 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#204] : ContactData{name='null', family='null'}
+l13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:20.266 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:20.267 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#204
+\13:45:20.268 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.268 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [206]
+¸13:45:20.268 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 206
+³13:45:20.269 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#206] : ContactData{name='null', family='null'}
+l13:45:20.269 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:20.269 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:20.269 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Ivanov]
+d13:45:20.269 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:20.269 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Ivan]
+`13:45:20.270 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:20.270 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:20.270 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:20.270 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#206
+\13:45:20.270 [Test worker] DEBUG o.h.s.r.internal.StandardRowReader - ---Processing Row---
+c13:45:20.270 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [0] - [207]
+¸13:45:20.270 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Hydrated EntityKey (NavigablePath[pft.adressbook.model.ContactData]): 207
+³13:45:20.270 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Created new entity instance [pft.adressbook.model.ContactData#207] : ContactData{name='null', family='null'}
+l13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [1] - [Ekaterinburg]
+d13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [2] - [null]
+f13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [3] - [Petrov]
+d13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [4] - [null]
+d13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [5] - [Petr]
+`13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [6] - []
+d13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [7] - [null]
+d13:45:20.271 [Test worker] DEBUG org.hibernate.orm.sql.results - Extracted JDBC value [8] - [null]
+13:45:20.271 [Test worker] DEBUG o.h.orm.sql.resultsloading.entity - Done materializing entityInstance : pft.adressbook.model.ContactData#207
+13:45:20.274 [Test worker] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+P13:45:20.275 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+i13:45:20.275 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+e13:45:20.276 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+…13:45:20.279 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 6 objects
+‹13:45:20.280 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+V13:45:20.281 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+Ù13:45:20.281 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Petr, photo=, telephone=null, id=207, family=Petrov, email=null}
+ÿ13:45:20.282 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð±ÑƒÑ€Ð³, work=333, mobile=222, name=ÐžÐ»ÐµÐ³, photo=, telephone=4951251, id=174, family=Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð², email=sokolov85@mail.ru}
+Ù13:45:20.282 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=206, family=Ivanov, email=null}
+Ù13:45:20.282 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Petr, photo=, telephone=null, id=203, family=Petrov, email=null}
+Ù13:45:20.282 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=204, family=Ivanov, email=null}
+Ù13:45:20.282 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Ekaterinburg, work=null, mobile=null, name=Ivan, photo=, telephone=null, id=202, family=Ivanov, email=null}
+„13:45:20.285 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+„13:45:20.293 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
