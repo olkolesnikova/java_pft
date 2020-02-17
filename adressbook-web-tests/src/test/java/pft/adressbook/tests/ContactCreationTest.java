@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pft.adressbook.model.ContactData;
 import pft.adressbook.model.Contacts;
+import pft.adressbook.model.Groups;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -57,6 +58,7 @@ public class ContactCreationTest extends TestBase {
 
     @Test(dataProvider = "validContactsFromJson")
   public void testContactCreation(ContactData contact) throws Exception {
+        Groups groups = app.db().groups();
         Contacts before = app.db().contacts();
         app.getContactHelper().createContact(contact);
         File photo = new File("src/test/resources/volk.jpg");

@@ -53,10 +53,25 @@ public class ContactData {
         @Type(type = "text")
         private String email;
 
-
+        @Transient
+        private String inGroup;
 
     public File getPhoto() {
         return new File(photo);
+    }
+
+    public String getInGroup() {
+        return inGroup;
+    }
+
+    public ContactData withInGroup(String inGroup) {
+        this.inGroup = inGroup;
+        return this;
+    }
+
+    public ContactData inGroup(GroupData group) {
+    groups.add(group);
+    return this;
     }
 
     public ContactData withPhoto(File photo) {
@@ -91,6 +106,8 @@ public class ContactData {
     public String getEmail2() {
         return email2;
     }
+
+
 
     public ContactData withEmail2(String email2) {
         this.email2 = email2;
