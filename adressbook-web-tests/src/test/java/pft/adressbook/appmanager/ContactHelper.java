@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import pft.adressbook.model.ContactData;
 import pft.adressbook.model.Contacts;
+import pft.adressbook.model.GroupData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,16 +44,18 @@ public class ContactHelper extends HelperBase {
 
         //attach(By.name("photo"), contactData.getPhoto());
 
-        if (creation) {
-            if (contactData.getGroups().size() > 0) {
-                Assert.assertTrue(contactData.getGroups().size() == 1);
+        if (creation){
+            if (contactData.getGroups().size()>0) {
+                Assert.assertTrue(contactData.getGroups().size()==1);
                 new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
-            } else {
-                Assert.assertTrue(isElementPresent(By.name("new_group")));
             }
         }
-
+        else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
     }
+
+
 
 
 
@@ -71,10 +74,10 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void modifyContact(ContactData contact) {
+    public void modifyContact(ContactData contact, boolean creation) {
         selectContactById(contact.getId());
         gotoEdit(contact.getId());
-        fillContactForm(contact, true);
+        fillContactForm(contact, false);
         getUpdate();
         contactCache = null;
         returnToHomePage();
@@ -192,6 +195,14 @@ public class ContactHelper extends HelperBase {
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFamily(lastname).withName(firstname).withAddress(address).withTelephone(telephone).withMobile(mobile).withWork(work)
                 .withEmail(email).withEmail2(email2).withEmail3(email3);
+
+    }
+
+    public void addContactToGroup(ContactData contact, GroupData group) {
+        selectContactById(contact.getId());
+        click(By.name("to_group"));
+        click(By.cssSelector("select[name=\"to_group\"] > option[value=\""+group.getId()+"\"]"));
+        click(By.name("add"));
 
     }
 }

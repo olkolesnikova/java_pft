@@ -1,12 +1,7 @@
 [
   {
-    "name": "Ivan",
-    "family": "Ivanov",
-    "address": "Ekaterinburg"
-  },
-  {
-    "name": "Petr",
-    "family": "Petrov",
+    "name": "Victor",
+    "family": "Smirnov",
     "address": "Ekaterinburg"
   }
 ]
