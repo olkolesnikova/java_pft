@@ -20,7 +20,7 @@ public class AddContactToGroup extends TestBase {
                     .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251")
                     .withMobile("222").withWork("333").withEmail("sokolov85@mail.ru"));
         }
-        
+
         if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
             app.group().create (new GroupData().withName("test 1"));

@@ -209,4 +209,16 @@ public class ContactHelper extends HelperBase {
     public void returnToContactPage() {
         click(By.linkText("home"));
     }
+
+    public void deleteGroupFromContact(ContactData deletedContact, int groupId) {
+        click(By.name("group"));
+        click(By.cssSelector("select[name=\"group\"] > option[value=\""+ groupId +"\"]"));
+        selectContactById(deletedContact.getId());
+        click(By.name("remove"));
+
+    }
+
+    public void getCurrentGroupPage(GroupData group) {
+        click(By.linkText("group page \""+group.getName()+"\""));
+    }
 }
