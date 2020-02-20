@@ -205,4 +205,8 @@ public class ContactHelper extends HelperBase {
         click(By.name("add"));
 
     }
+
+    public void returnToContactPage() {
+        click(By.linkText("home"));
+    }
 }
