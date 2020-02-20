@@ -24,7 +24,7 @@ public class DeleteContactFromGroup extends TestBase{
         for (ContactData contact : beforeContact) {
             if (contact.getGroups().size() > 0) {
                 Groups groupsWithContacts = contact.getGroups();
-                return groups.iterator().next();
+                return groupsWithContacts.iterator().next();
             }
         }
         ContactData addedContact = beforeContact.iterator().next();
