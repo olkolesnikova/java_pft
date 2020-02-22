@@ -50,7 +50,7 @@ public class DbHelper {
         return result;
     }
 
-    public GroupData getGroupsFromDb(int id) {
+        public GroupData getGroupsFromDb(int id) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         GroupData result = (GroupData) session.createQuery( "from GroupData where id =" + id).uniqueResult();
