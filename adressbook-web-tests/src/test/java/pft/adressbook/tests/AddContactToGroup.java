@@ -15,13 +15,15 @@ public class AddContactToGroup extends TestBase {
     @BeforeMethod
 
     public void ensurePreconditions() {
-        if (app.db().contacts().size() == 0) {
+        Contacts contacts = app.db().contacts();
+        Groups groups = app.db().groups();
+        if (contacts.size() == 0) {
             app.getContactHelper().createContact(new ContactData()
                     .withFamily("Соколов").withName("Олег").withAddress("Екатеринбург").withTelephone("4951251")
-                    .withMobile("222").withWork("333").withEmail("sokolov85@mail.ru"));
+                    .withMobile("222").withWork("333").withEmail("sokolov85@mail.ru").withInGroup(groups.iterator().next()));
         }
 
-        if (app.db().groups().size() == 0) {
+        if (groups.size() == 0) {
             app.goTo().groupPage();
             app.group().create (new GroupData().withName("test 1"));
         }
@@ -34,21 +36,21 @@ public class AddContactToGroup extends TestBase {
         Contacts before = app.db().contacts();
         Groups groups = app.db().groups();
         GroupData group = groups.iterator().next();
-        ContactData addedContact = NewContact(before);
+        ContactData addedContact = newContact(before);
         app.getContactHelper().addContactToGroup(addedContact, group);
         Groups afterAdditionContact = app.db().getContactFromDb(addedContact.getId()).getGroups();
         assertThat(afterAdditionContact, equalTo(addedContact.getGroups().withAdded(group)));
     }
 
-    private ContactData NewContact(Contacts before) {
+    private ContactData newContact(Contacts before) {
         for (ContactData contact : before) {
-            if (contact.getGroups().size() == 0) {
+            if (contact.getGroups().size() < app.db().groups().size()) {
                 return contact;
             }
         }
-
-        app.getContactHelper().createContact(new ContactData().withName("111").withFamily("222").withAddress("333"));
-        Contacts newList = app.db().contacts();
-        return newList.iterator().next();
+        int nextId = app.getContactHelper().getNextId(before);
+        app.getContactHelper().createContact(new ContactData().withName("111").withFamily("222").withAddress("333").withId(nextId));
+        ContactData newContact = app.db().contacts().getContactById(app.db().contacts(), nextId);
+        return newContact;
     }
 }

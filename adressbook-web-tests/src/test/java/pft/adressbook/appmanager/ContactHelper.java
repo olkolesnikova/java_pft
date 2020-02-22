@@ -221,4 +221,15 @@ public class ContactHelper extends HelperBase {
     public void getCurrentGroupPage(GroupData group) {
         click(By.linkText("group page \""+group.getName()+"\""));
     }
+
+    public int getNextId(Contacts contacts) {
+        int max = 0;
+        for (ContactData contact : contacts) {
+            if (contact.getId() > max) {
+                max= contact.getId();
+            }
+        }
+        return max+1;
+    }
 }
+

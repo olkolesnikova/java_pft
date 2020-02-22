@@ -64,12 +64,17 @@ public class ContactData {
         return inGroup;
     }
 
+    public int getNextId() {
+        return id = id + 1;
+
+    }
+
     public ContactData withInGroup(String inGroup) {
         this.inGroup = inGroup;
         return this;
     }
 
-    public ContactData inGroup(GroupData group) {
+    public ContactData withInGroup(GroupData group) {
     groups.add(group);
     return this;
     }
