@@ -29,7 +29,9 @@ public class HttpSession {
         HttpPost post = new HttpPost(app.getProperty("web.baseUrl") + "/login.php");
         List<NameValuePair> params = new ArrayList<>();
         params.add(new BasicNameValuePair("username", username));
+        post.setEntity(new UrlEncodedFormEntity(params));
         params.add(new BasicNameValuePair("password", password));
+        post.setEntity(new UrlEncodedFormEntity(params));
         params.add(new BasicNameValuePair("secure_session", "on"));
         params.add(new BasicNameValuePair("return", "/account_page.php"));
         post.setEntity(new UrlEncodedFormEntity(params));
@@ -50,7 +52,7 @@ public class HttpSession {
         HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "/account_page.php");
         CloseableHttpResponse response = httpClient.execute(get);
         String body = getTextFrom(response);
-        return body.contains(String.format("<span class=\"italic\">%s</span>", username));
+        return body.contains(String.format("<span class=\"label hidden-xs label-default arrowed\">%s</span>", username));
     }
 
 }

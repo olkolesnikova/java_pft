@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pft.mantis.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-23T09:22:18" hostname="Earp" time="0.857">
+  <properties/>
+  <testcase name="testLogin" classname="pft.mantis.tests.LoginTests" time="0.857"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
