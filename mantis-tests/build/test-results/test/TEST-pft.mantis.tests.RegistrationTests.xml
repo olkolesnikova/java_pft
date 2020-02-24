@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.mantis.tests.RegistrationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-24T19:17:42" hostname="Earp" time="9.731">
+<testsuite name="pft.mantis.tests.RegistrationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-24T20:25:42" hostname="Earp" time="11.595">
   <properties/>
-  <testcase name="testRegistration" classname="pft.mantis.tests.RegistrationTests" time="9.731">
+  <testcase name="testRegistration" classname="pft.mantis.tests.RegistrationTests" time="11.595">
     <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
@@ -63,16 +63,16 @@
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
 SLF4J: Defaulting to no-operation MDCAdapter implementation.
 SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
-1582571863640	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\olkol\\AppData\\Local\\Temp\\rust_mozprofileAW6Oeo"
-1582571863981	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1582571864323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1582571864323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1582571864323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1582571864323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1582575943412	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\olkol\\AppData\\Local\\Temp\\rust_mozprofileLva8jS"
+1582575943913	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1582575944242	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1582575944242	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1582575944242	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1582575944242	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1582571866422	Marionette	INFO	Listening on port 57188
-1582571866756	Marionette	WARN	TLS certificate errors will be ignored for this session
-фев 25, 2020 12:17:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+1582575946352	Marionette	INFO	Listening on port 58967
+1582575946530	Marionette	WARN	TLS certificate errors will be ignored for this session
+фев 25, 2020 1:25:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
