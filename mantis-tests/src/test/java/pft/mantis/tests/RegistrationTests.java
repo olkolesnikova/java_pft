@@ -16,7 +16,7 @@ public class RegistrationTests extends TestBase{
 
     @BeforeMethod
 
-    public void startMailSerever() {
+    public void startMailServer() {
         app.mail().start();
     }
 
