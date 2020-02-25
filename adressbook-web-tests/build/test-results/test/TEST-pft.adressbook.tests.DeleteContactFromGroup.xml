@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pft.adressbook.tests.DeleteContactFromGroup" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-24T15:16:43" hostname="Earp" time="0.026">
+  <properties/>
+  <testcase name="testDeleteContactFromGroup" classname="pft.adressbook.tests.DeleteContactFromGroup" time="0.026">
+    <failure message="org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: pft.adressbook.model.GroupData.contacts, could not initialize proxy - no Session" type="org.hibernate.LazyInitializationException">org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: pft.adressbook.model.GroupData.contacts, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:162)
+	at org.hibernate.collection.internal.PersistentSet.size(PersistentSet.java:168)
+	at java.util.HashSet.&lt;init&gt;(HashSet.java:119)
+	at pft.adressbook.model.Contacts.&lt;init&gt;(Contacts.java:22)
+	at pft.adressbook.model.GroupData.getContacts(GroupData.java:44)
+	at pft.adressbook.tests.DeleteContactFromGroup.testDeleteContactFromGroup(DeleteContactFromGroup.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[20:16:43.321 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:16:43.321 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:16:43.322 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.lastname as lastname4_1_, contactdat0_.mobile as mobile5_1_, contactdat0_.firstname as firstnam6_1_, contactdat0_.photo as photo7_1_, contactdat0_.home as home8_1_, contactdat0_.work as work9_1_ from addressbook contactdat0_
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.lastname as lastname4_1_, contactdat0_.mobile as mobile5_1_, contactdat0_.firstname as firstnam6_1_, contactdat0_.photo as photo7_1_, contactdat0_.home as home8_1_, contactdat0_.work as work9_1_ from addressbook contactdat0_
+20:16:43.324 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:16:43.324 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[pft.adressbook.model.ContactData#1]
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [pft.adressbook.model.ContactData#1]
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Екатеринбург
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = sokolov85@mail.ru
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `family` : value = Соколов
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`family`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobile` : value = 222
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobile`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Олег
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = 
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:16:43.325 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 4951251
+20:16:43.326 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+20:16:43.326 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `work` : value = 333
+20:16:43.326 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`work`)  - enhanced for lazy-loading? - false
+20:16:43.326 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [pft.adressbook.model.ContactData#1]
+20:16:43.326 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [pft.adressbook.model.ContactData.groups#1]
+20:16:43.326 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:16:43.328 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [pft.adressbook.model.ContactData.groups#1]
+20:16:43.329 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [pft.adressbook.model.ContactData.groups#1]
+20:16:43.329 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [pft.adressbook.model.GroupData#2]
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = footer 1
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = header 1
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test 1
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:16:43.330 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [pft.adressbook.model.GroupData#2]
+20:16:43.330 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: pft.adressbook.model.ContactData.groups
+20:16:43.330 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [pft.adressbook.model.ContactData.groups#1]
+20:16:43.330 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: pft.adressbook.model.ContactData.groups
+20:16:43.331 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:16:43.331 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:16:43.331 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:16:43.331 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:16:43.331 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.ContactData.groups#1], was: [pft.adressbook.model.ContactData.groups#1] (initialized)
+20:16:43.332 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.GroupData.contacts#2], was: [pft.adressbook.model.GroupData.contacts#2] (uninitialized)
+20:16:43.332 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+20:16:43.332 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+20:16:43.332 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:16:43.332 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=2, contacts=<uninitialized>}
+20:16:43.333 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.ContactData{address=Екатеринбург, work=333, mobile=222, name=Олег, groups=[pft.adressbook.model.GroupData#2], photo=, telephone=4951251, id=1, family=Соколов, email=sokolov85@mail.ru}
+20:16:43.334 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:16:43.335 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:16:43.336 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:16:43.336 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:16:43.336 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+20:16:43.338 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:16:43.338 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[pft.adressbook.model.GroupData#1]
+20:16:43.338 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+20:16:43.338 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[pft.adressbook.model.GroupData#2]
+20:16:43.339 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+20:16:43.339 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[pft.adressbook.model.GroupData#3]
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [pft.adressbook.model.GroupData#1]
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = footer 0
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = header 0
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test 0
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [pft.adressbook.model.GroupData#1]
+20:16:43.339 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [pft.adressbook.model.GroupData#2]
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = footer 1
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = header 1
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test 1
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [pft.adressbook.model.GroupData#2]
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [pft.adressbook.model.GroupData#3]
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = footer 2
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = header 2
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test 2
+20:16:43.340 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:16:43.341 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [pft.adressbook.model.GroupData#3]
+20:16:43.341 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:16:43.341 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:16:43.341 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:16:43.341 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.GroupData.contacts#1], was: [pft.adressbook.model.GroupData.contacts#1] (uninitialized)
+20:16:43.341 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.GroupData.contacts#2], was: [pft.adressbook.model.GroupData.contacts#2] (uninitialized)
+20:16:43.342 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [pft.adressbook.model.GroupData.contacts#3], was: [pft.adressbook.model.GroupData.contacts#3] (uninitialized)
+20:16:43.342 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:16:43.342 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:16:43.342 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:16:43.342 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=2, contacts=<uninitialized>}
+20:16:43.342 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=3, contacts=<uninitialized>}
+20:16:43.342 [Test worker] DEBUG o.h.internal.util.EntityPrinter - pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=1, contacts=<uninitialized>}
+20:16:43.343 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:16:43.343 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
