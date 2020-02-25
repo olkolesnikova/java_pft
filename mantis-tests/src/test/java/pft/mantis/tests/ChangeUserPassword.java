@@ -1,6 +1,5 @@
 package pft.mantis.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
-public class RegistrationTests extends TestBase{
+public class ChangeUserPassword extends TestBase{
 
     @BeforeMethod
 
@@ -23,18 +22,16 @@ public class RegistrationTests extends TestBase{
 
     @Test
 
-    public void testRegistration() throws IOException, MessagingException {
+    public void testChangeUserPassword() throws IOException, MessagingException {
         long now = System.currentTimeMillis();
-        String user = String.format("user%s", now);
+        String user = String.format("user1582570475822", now);
         String password = "password";
-        String email = String.format("user%s@localhost.localdomain", now);
+        String email = String.format("user1582570475822@localhost.localdomain", now);
+        String admin = "administrator";
+        String adminpass = "root";
 
-        //app.james().createUser(user, password);
-
-        app.registration().start(user, email);
+        app.login_admin().loginAdmin(admin, adminpass);
         List<MailMessage> mailMessages = app.mail().waitForMail(2, 10000);
-
-        //List<MailMessage> mailMessages = app.james().waitForMail(user, password, 60000);
         String confirmationLink = findConfirmationLink(mailMessages, email);
         app.registration().finish(confirmationLink, password);
         assertTrue(app.newSession().login(user, password));
@@ -52,3 +49,5 @@ public class RegistrationTests extends TestBase{
         app.mail().stop();
     }
 }
+
+

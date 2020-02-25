@@ -22,6 +22,7 @@ public class ApplicationManager {
     private FtpHelper ftp;
     private MailHelper mailHelper;
     private JamesHelper jamesHelper;
+    private LoginAdminHelper loginAdminHelper;
 
 
     public ApplicationManager(String browser) {
@@ -92,6 +93,13 @@ public class ApplicationManager {
             jamesHelper = new JamesHelper(this);
         }
         return jamesHelper;
+    }
+
+    public LoginAdminHelper login_admin() {
+        if (loginAdminHelper == null) {
+        loginAdminHelper = new LoginAdminHelper(this);
+        }
+        return loginAdminHelper;
     }
 
 }
