@@ -17,12 +17,14 @@ public class LoginAdminHelper extends HelperBase{
         click(By.xpath("//input[@value='Войти']"));
         type(By.name("password"), password);
         click(By.xpath("//input[@value='Войти']"));
+        click(By.xpath("//div[@id='sidebar']/ul/li[6]/a/i"));
+        wd.findElement(By.linkText("Управление пользователями")).click();
         String xpath = String.format("//a[@href='manage_user_edit_page.php?user_id=%s']", userId);
         click(By.xpath(xpath));
-        click(By.linkText("Управление пользователями"));
-        click(By.linkText("user1582570475822"));
+
         click(By.xpath("//input[@value='Сбросить пароль']"));
     }
+
 }
 
 

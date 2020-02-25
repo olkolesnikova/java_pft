@@ -1,6 +1,6 @@
 package pft.mantis.model;
 
-import com.google.gson.annotations.Expose;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
