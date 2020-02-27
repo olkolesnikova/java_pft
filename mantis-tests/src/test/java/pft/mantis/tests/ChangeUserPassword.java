@@ -25,7 +25,6 @@ public class ChangeUserPassword extends TestBase{
     @Test
 
     public void testChangeUserPassword() throws IOException, MessagingException {
-        long now = System.currentTimeMillis();
 
         Users users = app.db().users();
         UserData selectedUser = users.iterator().next();
