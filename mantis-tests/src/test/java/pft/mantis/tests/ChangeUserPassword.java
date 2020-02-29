@@ -34,7 +34,6 @@ public class ChangeUserPassword extends TestBase{
         String password = selectedUser.getPassword();
         String admin = "administrator";
         String adminpass = "root";
-
         app.login_admin().loginAdmin(admin, adminpass, userId);
         List<MailMessage> mailMessages = app.mail().waitForMail(2, 10000);
         String confirmationLink = findConfirmationLink(mailMessages, email);

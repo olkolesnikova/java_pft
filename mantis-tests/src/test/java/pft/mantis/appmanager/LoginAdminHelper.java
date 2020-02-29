@@ -21,7 +21,6 @@ public class LoginAdminHelper extends HelperBase{
         wd.findElement(By.linkText("Управление пользователями")).click();
         String xpath = String.format("//a[@href='manage_user_edit_page.php?user_id=%s']", userId);
         click(By.xpath(xpath));
-
         click(By.xpath("//input[@value='Сбросить пароль']"));
     }
 
