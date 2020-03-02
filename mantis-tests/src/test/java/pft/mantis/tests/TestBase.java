@@ -1,8 +1,13 @@
 package pft.mantis.tests;
 
-import biz.futureware.mantis.rpc.soap.client.MantisConnect;
 import biz.futureware.mantis.rpc.soap.client.MantisConnectPortType;
 import biz.futureware.mantis.rpc.soap.client.ObjectRef;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+import org.apache.http.client.fluent.Executor;
+import org.apache.http.client.fluent.Request;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
@@ -12,11 +17,13 @@ import pft.mantis.model.Issue;
 import pft.mantis.model.Project;
 
 import javax.xml.rpc.ServiceException;
-import java.io.File;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import java.util.Set;
+
+
 
 public class TestBase {
 
@@ -44,6 +51,7 @@ public class TestBase {
         if (status.getName().equals("fixed")) {
             isFixed = true;
         }
+
         return isFixed;
     }
 
@@ -52,4 +60,28 @@ public class TestBase {
             throw new SkipException("Ignored because of issue " + issueId);
         }
     }
+
+    public static boolean isIssueOpen2(int issueId2) throws IOException, ServiceException {
+
+        boolean isFixed = false;
+        String json = getExecutor().execute(Request.Get("http://bugify.stqa.ru/api/issues.json")).returnContent().asString();
+        JsonElement parsed = JsonParser.parseString(json);
+        JsonElement issues =  parsed.getAsJsonObject().get("issues");
+        Set<Issue> issue = new Gson().fromJson(issues, new TypeToken<Set<Issue>>() {}.getType());
+        if (!issue.iterator().next().getState_name().equals("Open")){
+            isFixed = false;
+        }
+        return isFixed;
+    }
+
+    private static Executor getExecutor() {
+        return Executor.newInstance().auth("288f44776e7bec4bf44fdfeb1e646490", "");
+    }
+
+    public static void skipIfNotFixed2(int issueId) throws IOException, ServiceException {
+        if (isIssueOpen2(issueId)) {
+            throw new SkipException("Ignored because of issue " + issueId);
+        }
+    }
+
 }
