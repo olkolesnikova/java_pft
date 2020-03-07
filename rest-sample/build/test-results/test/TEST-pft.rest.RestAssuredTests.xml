@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pft.rest.RestAssuredTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-03-02T08:20:30" hostname="Earp" time="3.701">
+<testsuite name="pft.rest.RestAssuredTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-03-02T09:18:14" hostname="Earp" time="1.501">
   <properties/>
-  <testcase name="testCreateIssue" classname="pft.rest.RestAssuredTests" time="3.701">
+  <testcase name="testCreateIssue" classname="pft.rest.RestAssuredTests" time="1.501">
     <failure message="com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $" type="com.google.gson.JsonSyntaxException">com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $
 	at com.google.gson.JsonParser.parseReader(JsonParser.java:66)
 	at com.google.gson.JsonParser.parseString(JsonParser.java:47)
