@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1583910825498" stop="1583910832460">
+    <name>Suite1</name>
+    <test-cases>
+        <test-case start="1583910825595" stop="1583910827613" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 0'}]</name>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="4328a075579da14993c0172c3c4225e423a3f6ad7b410613028192f0472e71e6-attachment.png" type="image/png" size="31477"/>
+            </attachments>
+            <labels/>
+        </test-case>
+        <test-case start="1583910827620" stop="1583910828951" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 1'}]</name>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="471f8129bb608cbd520d00bf8ea1d16de13f8d5f6074d79e9aca26f920033fe4-attachment.png" type="image/png" size="31771"/>
+            </attachments>
+            <labels/>
+        </test-case>
+        <test-case start="1583910828953" stop="1583910830255" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 2'}]</name>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="649707b81fdd37e086811008e05da4d95f2169ed46be657b8ab962b3ec2ecb69-attachment.png" type="image/png" size="32085"/>
+            </attachments>
+            <labels/>
+        </test-case>
+        <test-case start="1583910830262" stop="1583910831815" status="passed">
+            <name>testGroupModification</name>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="191191b7582a6a0c30c8e3554c8a9e7409cd041a96d15345704bd3aafd0d8b34-attachment.png" type="image/png" size="32034"/>
+            </attachments>
+            <labels/>
+        </test-case>
+        <test-case start="1583910831823" stop="1583910832456" status="passed">
+            <name>testGroupDeletion</name>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="6ce42f5004313bcf8cc0c632b740125677c1c6f0815cea6c5968acd17d30b27d-attachment.png" type="image/png" size="31755"/>
+            </attachments>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>
